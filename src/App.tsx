@@ -17,7 +17,8 @@ import {
   ExternalLink,
   Layers,
   BarChart3,
-  Smartphone
+  Smartphone,
+  Globe
 } from "lucide-react";
 
 const clients = [
@@ -498,7 +499,7 @@ export default function App() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-16">
+          <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-8">
             <a
               href="mailto:muhammad.tharmizy@gmail.com"
               className="flex flex-col items-center gap-3 p-8 glass rounded-2xl hover:bg-brand-accent hover:border-brand-accent transition-all group text-center"
@@ -512,7 +513,8 @@ export default function App() {
               </div>
             </a>
             <a
-              href="https://wa.me/6285342020433"
+              href="https://wa.me/6285342020433?text=Hi%20Tharmizy%2C%20I%20want%20to%20discuss%20a%20project"
+              target="_blank" rel="noopener noreferrer"
               className="flex flex-col items-center gap-3 p-8 glass rounded-2xl hover:bg-green-500 hover:border-green-500 transition-all group text-center"
             >
               <div className="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center group-hover:bg-white/10 transition-colors">
@@ -525,6 +527,7 @@ export default function App() {
             </a>
             <a
               href="https://t.me/tamtam2492"
+              target="_blank" rel="noopener noreferrer"
               className="flex flex-col items-center gap-3 p-8 glass rounded-2xl hover:bg-sky-500 hover:border-sky-500 transition-all group text-center"
             >
               <div className="w-12 h-12 bg-sky-500/10 rounded-xl flex items-center justify-center group-hover:bg-white/10 transition-colors">
@@ -535,6 +538,37 @@ export default function App() {
                 <div className="font-semibold text-sm group-hover:text-white">@tamtam2492</div>
               </div>
             </a>
+          </div>
+
+          {/* Freelance Platforms */}
+          <div className="mb-10">
+            <div className="text-center text-[10px] uppercase tracking-widest font-bold text-brand-muted mb-5">Also Available On</div>
+            <div className="flex flex-wrap justify-center gap-3">
+              <a href="https://www.fiverr.com/tamtam2492" target="_blank" rel="noopener noreferrer"
+                className="flex items-center gap-2 px-5 py-3 glass rounded-xl hover:border-[#1DBF73]/50 hover:bg-[#1DBF73]/10 transition-all group">
+                <Globe className="w-4 h-4 text-[#1DBF73]" />
+                <div>
+                  <div className="text-[10px] uppercase tracking-widest font-bold text-brand-muted group-hover:text-[#1DBF73]">Fiverr</div>
+                  <div className="text-xs font-semibold">fiverr.com/tamtam2492</div>
+                </div>
+              </a>
+              <a href="https://www.upwork.com/freelancers/~019ed2870c749de3b9" target="_blank" rel="noopener noreferrer"
+                className="flex items-center gap-2 px-5 py-3 glass rounded-xl hover:border-[#6FDA44]/50 hover:bg-[#6FDA44]/10 transition-all group">
+                <Globe className="w-4 h-4 text-[#6FDA44]" />
+                <div>
+                  <div className="text-[10px] uppercase tracking-widest font-bold text-brand-muted group-hover:text-[#6FDA44]">Upwork</div>
+                  <div className="text-xs font-semibold">upwork.com/freelancers</div>
+                </div>
+              </a>
+              <a href="https://fastwork.id/user/muhammad.tharmizy" target="_blank" rel="noopener noreferrer"
+                className="flex items-center gap-2 px-5 py-3 glass rounded-xl hover:border-orange-400/50 hover:bg-orange-400/10 transition-all group">
+                <Globe className="w-4 h-4 text-orange-400" />
+                <div>
+                  <div className="text-[10px] uppercase tracking-widest font-bold text-brand-muted group-hover:text-orange-400">Fastwork</div>
+                  <div className="text-xs font-semibold">fastwork.id/muhammad.tharmizy</div>
+                </div>
+              </a>
+            </div>
           </div>
 
           <div className="text-center">
