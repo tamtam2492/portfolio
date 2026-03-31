@@ -86,13 +86,19 @@ I'm not just a developer — I've managed **50+ field agents across 5 cities**. 
 
 ---
 
-## 📊 GitHub Stats
+## 📊 Production Impact
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tamtam2492&show_icons=true&theme=github_dark&hide_border=true&bg_color=0A0A0B&title_color=3B82F6&icon_color=3B82F6&text_color=F4F4F5)
+![Clients](https://img.shields.io/badge/Clients-4_Enterprise-3B82F6?style=for-the-badge)
+![Systems](https://img.shields.io/badge/Systems_Built-5_Production-10B981?style=for-the-badge)
+![Transactions](https://img.shields.io/badge/Daily_Transactions-500%2B-F59E0B?style=for-the-badge)
+![Processing](https://img.shields.io/badge/Receipt_Processing-%3C10_sec-EF4444?style=for-the-badge)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=tamtam2492&layout=compact&theme=github_dark&hide_border=true&bg_color=0A0A0B&title_color=3B82F6&text_color=F4F4F5)
+![Reconciliation](https://img.shields.io/badge/Reconciliation_Time-14_days_→_6_hours-8B5CF6?style=for-the-badge)
+![Duplicates](https://img.shields.io/badge/Duplicate_Elimination-99%25-EC4899?style=for-the-badge)
+![Task Speed](https://img.shields.io/badge/Task_Completion-42%25_faster-06B6D4?style=for-the-badge)
+![Field Agents](https://img.shields.io/badge/Field_Agents_Managed-50%2B-84CC16?style=for-the-badge)
 
 </div>
 
