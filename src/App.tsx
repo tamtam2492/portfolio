@@ -62,10 +62,10 @@ const clients = [
       {
         id: "expedition-recon",
         title: "Expedition Reconciliation Engine",
-        problem: "Manual reconciliation of shipping costs vs transfers across 20+ branches. Discrepancies went undetected for weeks — reconciliation alone took up to 14 days.",
-        solution: "Real-time data pipeline from Google Forms to an automated Excel reconciliation engine with instant flagging and data validation rules.",
-        roi: "Reconciliation time cut from 14 days to 6 hours. 99% of duplicate entries eliminated. Full financial visibility across all branches without manual effort.",
-        tools: ["Google Forms", "Google Sheets", "Excel Automation", "Data Pipelines"],
+        problem: "Manual reconciliation of shipping costs vs transfers across 80+ branches in 2 operational areas (Sulawesi Tenggara & Makassar Outer). Discrepancies went undetected for weeks — reconciliation alone took up to 14 days. Multi-bank payments (BRI, BCA, ShopeePay, GoPay, BNI, DANA) made tracking nearly impossible.",
+        solution: "End-to-end data pipeline: branch operators submit transfer proof via Google Forms → auto-stored in Google Drive + Google Sheets → fed into a 49-column Excel reconciliation engine that matches shipping costs against actual bank transfers across all branches and flags discrepancies instantly. Daily, monthly, and per-bank summaries generated automatically.",
+        roi: "Reconciliation time cut from 14 days to 6 hours. 99% of duplicate entries eliminated. Handles Rp90M+ monthly transaction volume across 80+ branches. Full financial visibility — management sees branch-level accuracy daily without manual effort.",
+        tools: ["Google Forms", "Google Sheets", "Google Drive", "Excel Automation", "Data Pipelines"],
         icon: <Layers className="w-5 h-5 text-purple-400" />
       },
     ]

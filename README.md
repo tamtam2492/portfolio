@@ -48,7 +48,7 @@ I'm not just a developer — I've managed **50+ field agents across 5 cities in 
 ### PT Maulagi Indo Solusi — Logistics Operations
 | System | Impact |
 |---|---|
-| **Expedition Reconciliation Engine** | 20+ branches • reconciliation cut from **14 days → 6 hours** • 99% duplicate elimination |
+| **Expedition Reconciliation Engine** | 80+ branches • 2 areas • Rp90M+/month • 6 banks • reconciliation cut from **14 days → 6 hours** • 99% duplicate elimination |
 
 ### Nie Buket — Premium Bouquet & Gift Shop
 | System | Impact |
