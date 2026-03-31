@@ -41,8 +41,8 @@ const clients = [
       {
         id: "field-monitoring",
         title: "Field Team Monitoring System",
-        problem: "No unified system for 50+ agents across 5 cities. Management spent days just consolidating data.",
-        solution: "Custom Excel-based operational backbone aggregating ACH Target, Recovery Rate, and Gap Analysis automatically across all cities.",
+        problem: "No unified system for 50+ agents across 5 cities — Makassar, Manado, Palu, Kendari, and Gorontalo. Management spent days just consolidating data.",
+        solution: "Custom Excel-based operational backbone aggregating ACH Target, Recovery Rate, and Gap Analysis automatically across all cities. Automated reporting replaced manual daily compilation.",
         roi: "Shifted leadership focus from data collection to decision-making. 42% improvement in task completion time. Reduced coordination overhead by 8 hours per day for management.",
         tools: ["Advanced Excel", "SUMIFS", "XLOOKUP", "Data Architecture"],
         icon: <BarChart3 className="w-5 h-5 text-green-400" />
@@ -60,9 +60,9 @@ const clients = [
       {
         id: "expedition-recon",
         title: "Expedition Reconciliation Engine",
-        problem: "Manual reconciliation of shipping costs vs transfers across 24+ branches. Discrepancies went undetected for weeks — reconciliation alone took up to 14 days.",
+        problem: "Manual reconciliation of shipping costs vs transfers across 20+ branches. Discrepancies went undetected for weeks — reconciliation alone took up to 14 days.",
         solution: "Real-time data pipeline from Google Forms to an automated Excel reconciliation engine with instant flagging and data validation rules.",
-        roi: "Reconciliation time cut from 14 days to 6 hours. 99% of duplicate entries eliminated. Full financial visibility across all branches. Scalable template supports 50+ branch expansion.",
+        roi: "Reconciliation time cut from 14 days to 6 hours. 99% of duplicate entries eliminated. Full financial visibility across all branches without manual effort.",
         tools: ["Google Forms", "Google Sheets", "Excel Automation", "Data Pipelines"],
         icon: <Layers className="w-5 h-5 text-purple-400" />
       },
@@ -162,9 +162,12 @@ export default function App() {
               <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-[1.0] mb-8 text-gradient">
                 Transforming operational chaos into automated precision.
               </h1>
-              <p className="text-lg md:text-xl text-brand-muted mb-10 leading-relaxed max-w-2xl">
+              <p className="text-lg md:text-xl text-brand-muted mb-6 leading-relaxed max-w-2xl">
                 I build the <span className="text-white font-medium italic">"Final Brain"</span> logic for enterprise workflows. From AI-driven payment validation to multi-city logistics engines, I engineer systems that survive the field.
               </p>
+              <blockquote className="border-l-2 border-brand-accent pl-5 py-1 mb-10 max-w-2xl">
+                <p className="text-sm italic text-brand-muted leading-relaxed">"As long as there is data that needs to be tracked, I can automate it. Because I have proven it in the field."</p>
+              </blockquote>
               <div className="flex flex-wrap gap-4">
                 <a
                   href="#portfolio"
@@ -330,9 +333,12 @@ export default function App() {
               {[
                 { name: "n8n", category: "Automation" },
                 { name: "Telegram Bot API", category: "Messaging" },
+                { name: "WhatsApp Automation", category: "Messaging" },
                 { name: "Google Sheets", category: "Data Layer" },
+                { name: "Google Forms", category: "Data Collection" },
                 { name: "AI / OCR", category: "Intelligence" },
                 { name: "Advanced Excel", category: "Analytics" },
+                { name: "Power BI", category: "Analytics" },
                 { name: "Kotlin & Compose", category: "Mobile" },
                 { name: "Firebase", category: "Backend" },
                 { name: "Node.js", category: "API" },
@@ -438,7 +444,7 @@ export default function App() {
               <div className="space-y-10">
                 {[
                   { title: "I understand the problem from inside", desc: "I have worked in operations. I know what breaks in the field. The systems I build solve real problems, not theoretical ones." },
-                  { title: "Everything proven in production", desc: "Not demo environments, not practice projects. Real data, real teams, real scale — systems I can reference and verify." },
+                  { title: "Everything proven in production", desc: "All systems in this portfolio ran in real operations. Not demo environments, not practice projects. Real data, real teams, real scale." },
                   { title: "No hand-holding required", desc: "I scope, design, build, and deliver. You brief me once. I translate it into a system that outlasts the engagement." }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-5">
@@ -453,7 +459,7 @@ export default function App() {
             </div>
             <div className="grid grid-cols-1 gap-6">
               {[
-                { title: "Cross-industry adaptability", desc: "Telecoms, logistics, and now app development. Same principles, same approach. I adapt to the domain — not the other way around." },
+                { title: "Cross-industry adaptability", desc: "Telecoms, logistics, and now app development. The same principles apply. The same approach works. I adapt quickly." },
                 { title: "Results over complexity", desc: "The goal is never an impressive-looking system. The goal is giving time back to the team. Simple, reliable, and actually used." },
                 { title: "Async-first communication", desc: "I work across time zones. Documentation is thorough. Handoffs are clean. You are never left waiting for status updates." }
               ].map((item, i) => (

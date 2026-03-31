@@ -2,9 +2,11 @@
 
 # Muhammad Tharmizy Tahir, ST
 
-**Operations Systems Architect**
+**Workflow Automation Engineer | Operations Systems Builder**
 
-*Transforming operational chaos into automated precision.*
+*n8n · AI · Telegram Bot · Android · Excel*
+
+> *"As long as there is data that needs to be tracked, I can automate it. Because I have proven it in the field."*
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-tharmizy--portfolio.vercel.app-0A0A0B?style=for-the-badge&logo=vercel&logoColor=white)](https://tharmizy-portfolio.vercel.app)
 [![Email](https://img.shields.io/badge/Email-muhammad.tharmizy%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muhammad.tharmizy@gmail.com)
@@ -35,7 +37,7 @@ I'm not just a developer — I've managed **50+ field agents across 5 cities**. 
 ### PT Maulagi Indo Solusi — Logistics Operations
 | System | Impact |
 |---|---|
-| **Expedition Reconciliation Engine** | 24+ branches • reconciliation cut from **14 days → 6 hours** • 99% duplicate elimination |
+| **Expedition Reconciliation Engine** | 20+ branches • reconciliation cut from **14 days → 6 hours** • 99% duplicate elimination |
 
 ### Nie Buket — Premium Bouquet & Gift Shop
 | System | Impact |
@@ -55,6 +57,7 @@ I'm not just a developer — I've managed **50+ field agents across 5 cities**. 
 
 ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
 ![Telegram Bot](https://img.shields.io/badge/Telegram_Bot_API-2CA5E0?style=flat-square&logo=telegram&logoColor=white)
+![WhatsApp](https://img.shields.io/badge/WhatsApp_Automation-25D366?style=flat-square&logo=whatsapp&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST_API-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Webhooks](https://img.shields.io/badge/Webhooks-FF6B35?style=flat-square)
 
@@ -83,6 +86,8 @@ I'm not just a developer — I've managed **50+ field agents across 5 cities**. 
 
 ![Excel](https://img.shields.io/badge/Advanced_Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white)
 ![Google Sheets](https://img.shields.io/badge/Google_Sheets-34A853?style=flat-square&logo=googlesheets&logoColor=white)
+![Google Forms](https://img.shields.io/badge/Google_Forms-7248B9?style=flat-square&logo=googleforms&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 
 ---
 
@@ -101,6 +106,17 @@ I'm not just a developer — I've managed **50+ field agents across 5 cities**. 
 ![Field Agents](https://img.shields.io/badge/Field_Agents_Managed-50%2B-84CC16?style=for-the-badge)
 
 </div>
+
+---
+
+## 💡 Why Work With Me
+
+| | |
+|---|---|
+| **I understand the problem from inside** | I have worked in operations. I know what breaks in the field. The systems I build solve real problems, not theoretical ones. |
+| **Everything proven in production** | All systems ran in real operations. Not demo environments. Real data, real teams, real scale. |
+| **Cross-industry adaptability** | Telecoms, logistics, and now app development. Same principles, same approach. I adapt quickly. |
+| **Results over complexity** | The goal is giving time back to the team. Simple, reliable, and actually used. |
 
 ---
 

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Muhammad Tharmizy Tahir, ST</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Calibri:wght@400;700&family=Arial&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+      font-size: 11pt;
+      color: #1a1a1a;
+      background: #fff;
+      line-height: 1.55;
+    }
+
+    .page {
+      max-width: 794px;
+      margin: 0 auto;
+      padding: 48px 56px;
+    }
+
+    /* Header */
+    .header {
+      background: #1e3a5f;
+      color: #fff;
+      border-radius: 6px;
+      padding: 22px 28px 18px;
+      margin-bottom: 24px;
+    }
+    .header h1 { font-size: 24pt; font-weight: 700; letter-spacing: -0.3px; }
+    .header .subtitle { font-size: 10.5pt; color: #b8d4f0; margin-top: 4px; }
+    .header .contact-line { font-size: 9.5pt; color: #9bbfe0; margin-top: 8px; }
+
+    /* Quote */
+    .quote {
+      border-left: 3px solid #1e3a5f;
+      padding: 10px 16px;
+      margin-bottom: 24px;
+      font-style: italic;
+      color: #444;
+      font-size: 10.5pt;
+    }
+
+    /* Section heading */
+    h2.section {
+      font-size: 9pt;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #1e3a5f;
+      border-bottom: 1.5px solid #1e3a5f;
+      padding-bottom: 4px;
+      margin-bottom: 14px;
+      margin-top: 28px;
+    }
+
+    /* About */
+    .about p { margin-bottom: 9px; font-size: 10.5pt; color: #222; }
+
+    /* Skills grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 32px;
+      margin-bottom: 4px;
+    }
+    .skills-col h4 { font-weight: 700; font-size: 10.5pt; margin-bottom: 6px; }
+    .skills-col ul { padding-left: 16px; }
+    .skills-col li { font-size: 10pt; color: #333; margin-bottom: 3px; }
+
+    /* Tools badges */
+    .tools-line {
+      font-size: 9.5pt;
+      color: #333;
+      margin-top: 12px;
+      line-height: 1.8;
+    }
+    .tools-line span {
+      display: inline-block;
+      background: #f0f0f0;
+      border-radius: 3px;
+      padding: 1px 6px;
+      margin: 2px 2px;
+      font-size: 9pt;
+    }
+
+    /* Project card */
+    .project-card {
+      border: 1px solid #c8d8e8;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      overflow: hidden;
+      page-break-inside: avoid;
+    }
+    .project-header {
+      background: #1e3a5f;
+      color: #fff;
+      padding: 8px 14px;
+    }
+    .project-header h3 { font-size: 12pt; font-weight: 700; }
+    .project-header .project-sub { font-size: 9pt; color: #9bbfe0; font-style: italic; margin-top: 2px; }
+    .project-body { padding: 12px 14px; }
+    .project-row { margin-bottom: 8px; }
+    .project-row .label { font-weight: 700; font-size: 9.5pt; color: #1e3a5f; margin-bottom: 3px; }
+    .project-row p { font-size: 10pt; color: #333; }
+    .tools-row { font-size: 9pt; color: #555; }
+    .tools-row span {
+      display: inline-block;
+      background: #eef3f8;
+      border-radius: 3px;
+      padding: 1px 5px;
+      margin: 1px 2px;
+    }
+
+    /* Why Work With Me */
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .why-card {
+      border: 1px solid #c8d8e8;
+      border-radius: 5px;
+      padding: 12px 14px;
+    }
+    .why-card h4 { font-weight: 700; font-size: 10.5pt; color: #1e3a5f; margin-bottom: 5px; }
+    .why-card p { font-size: 9.5pt; color: #444; }
+
+    /* Contact */
+    .contact-table {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0;
+      border: 1px solid #c8d8e8;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .contact-cell {
+      padding: 12px;
+      text-align: center;
+      border-right: 1px solid #c8d8e8;
+    }
+    .contact-cell:last-child { border-right: none; }
+    .contact-cell .c-label { font-weight: 700; font-size: 10pt; color: #1e3a5f; margin-bottom: 4px; }
+    .contact-cell .c-value { font-size: 9.5pt; color: #333; }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      font-size: 9pt;
+      color: #888;
+      margin-top: 32px;
+      border-top: 1px solid #e0e0e0;
+      padding-top: 12px;
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page { padding: 32px 40px; max-width: 100%; }
+      @page { margin: 1.5cm; size: A4; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Muhammad Tharmizy Tahir, S.T.</h1>
+    <div class="subtitle">Workflow Automation Engineer &nbsp;|&nbsp; Operations Systems Builder &nbsp;|&nbsp; n8n · AI · Telegram Bot</div>
+    <div class="contact-line">muhammad.tharmizy@gmail.com &bull; +62 853-4202-0433 &bull; Telegram: @tamtam2492 &bull; Makassar, Indonesia</div>
+  </div>
+
+  <!-- Quote -->
+  <blockquote class="quote">
+    "As long as there is data that needs to be tracked, I can automate it. Because I have proven it in the field."
+  </blockquote>
+
+  <!-- About -->
+  <h2 class="section">A B O U T</h2>
+  <div class="about">
+    <p>Most businesses I have worked with had the same problem: too much manual work, too little visibility. I fix that by building automation systems that actually get used in the field, not just on paper.</p>
+    <p>I have built and deployed workflow automation for real operations. A payment receipt system using Telegram and AI/OCR that eliminated manual data entry for field agents. A reconciliation system handling data from 20+ logistics branches daily. A POS system for a retail shop. A full Android app for a laundry business. These are not side projects — they ran in production.</p>
+    <p>Beyond the technical side, I have led field operations teams of 40+ people across 5 cities in Sulawesi. I do not just build systems. I understand what breaks in the field, what people actually need, and how to design automation that survives real-world conditions.</p>
+    <p>Most automation engineers have never managed a team. Most operations managers cannot build automation. I do both. That combination is rare and it is what I bring to every engagement.</p>
+  </div>
+
+  <!-- Core Skills -->
+  <h2 class="section">C O R E &nbsp; S K I L L S</h2>
+  <div class="skills-grid">
+    <div class="skills-col">
+      <h4>Automation &amp; Systems</h4>
+      <ul>
+        <li>Workflow automation — n8n, Telegram Bot, WhatsApp</li>
+        <li>API &amp; webhook integration</li>
+        <li>AI/OCR for document data extraction</li>
+        <li>Google Sheets automation &amp; pipelines</li>
+        <li>Android app development (Kotlin, Jetpack Compose)</li>
+      </ul>
+    </div>
+    <div class="skills-col">
+      <h4>Operations &amp; Data</h4>
+      <ul>
+        <li>Microsoft Excel advanced — SUMIFS, LET, FILTER, XLOOKUP</li>
+        <li>Data reconciliation — multi-branch cost vs payment matching</li>
+        <li>Performance monitoring &amp; dashboard design</li>
+        <li>Multi-location team leadership (40+ people, 5 cities)</li>
+        <li>Power BI — reporting &amp; visualization</li>
+      </ul>
+    </div>
+  </div>
+  <div class="tools-line">
+    <span>n8n</span><span>Telegram Bot API</span><span>WhatsApp Automation</span><span>Google Sheets</span><span>Google Forms</span>
+    <span>Microsoft Excel</span><span>AI / OCR</span><span>REST API</span><span>Firebase</span><span>Android (Kotlin)</span><span>Power BI</span>
+  </div>
+
+  <!-- Project Portfolio -->
+  <h2 class="section">P R O J E C T &nbsp; P O R T F O L I O</h2>
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3>1. Payment Receipt Automation</h3>
+      <div class="project-sub">Telkomsel Collection Operations — Sulawesi</div>
+    </div>
+    <div class="project-body">
+      <div class="project-row">
+        <div class="label">The Problem</div>
+        <p>Collection teams received dozens of payment receipts every day via Telegram. Agents had to manually read each photo and type the data into a spreadsheet — one by one. Hours of work, high error rate, and zero consistency across the team.</p>
+      </div>
+      <div class="project-row">
+        <div class="label">What I Built</div>
+        <p>Built an end-to-end automation workflow using n8n. When a customer sends a payment receipt photo via Telegram, the system extracts all relevant data using AI/OCR, validates it, saves it automatically to Google Sheets, and sends a confirmation back to the sender. If the photo is unclear, the system requests a resend automatically.</p>
+      </div>
+      <div class="project-row">
+        <div class="label">Tools Used</div>
+        <div class="tools-row"><span>n8n</span><span>Telegram Bot API</span><span>AI / OCR</span><span>Google Sheets</span><span>REST API</span></div>
+      </div>
+      <div class="project-row" style="margin-bottom:0">
+        <div class="label">Result</div>
+        <p>Manual data entry dropped to zero. 95% accuracy achieved. Processing time under 10 seconds. Handles 500+ transactions daily. The system ran in production and handled daily payment verification for the entire collection team.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3>2. Field Team Monitoring System</h3>
+      <div class="project-sub">Telkomsel Collection — Sulawesi (50+ Agents, 5 Cities)</div>
+    </div>
+    <div class="project-body">
+      <div class="project-row">
+        <div class="label">The Problem</div>
+        <p>Managing 50+ field agents spread across 5 cities — Makassar, Manado, Palu, Kendari, and Gorontalo — with no unified system meant spending most of each day just collecting and consolidating data before any analysis could begin.</p>
+      </div>
+      <div class="project-row">
+        <div class="label">What I Built</div>
+        <p>Built a comprehensive Excel-based monitoring system from scratch. The system aggregated performance data from all agents across all cities — ACH Target, Recovery Rate, Caring Visit, Digital Caring, Gap Analysis, and Collected vs Paid. Automated reporting replaced manual daily compilation.</p>
+      </div>
+      <div class="project-row">
+        <div class="label">Tools Used</div>
+        <div class="tools-row"><span>Microsoft Excel</span><span>SUMIFS</span><span>LET</span><span>FILTER</span><span>XLOOKUP</span><span>Conditional Formatting</span></div>
+      </div>
+      <div class="project-row" style="margin-bottom:0">
+        <div class="label">Result</div>
+        <p>Data from 50+ agents across 5 cities aggregated automatically. Team leadership time shifted from data collection to actual decision-making and agent coaching. 42% improvement in task completion. Reduced coordination overhead by 8 hours per day.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3>3. Expedition Collection &amp; Reconciliation System</h3>
+      <div class="project-sub">Logistics Business — Multi-Branch Sulawesi (20+ Branches)</div>
+    </div>
+    <div class="project-body">
+      <div class="project-row">
+        <div class="label">The Problem</div>
+        <p>A logistics business with 20+ branches across Sulawesi had no standardized way to collect payment data from branches. Reconciling shipping costs against actual transfers was done manually, took hours, and transaction discrepancies often went undetected until it was too late.</p>
+      </div>
+      <div class="project-row">
+        <div class="label">What I Built</div>
+        <p>Built an end-to-end data pipeline: branch operators submit payment data via Google Forms, the data is automatically stored and organized in Google Sheets with timestamps, then fed into an Excel reconciliation engine that matches shipping costs against actual bank transfers across all branches and flags discrepancies instantly.</p>
+      </div>
+      <div class="project-row">
+        <div class="label">Tools Used</div>
+        <div class="tools-row"><span>Google Forms</span><span>Google Sheets</span><span>Microsoft Excel</span><span>SUMIFS</span><span>LET</span><span>FILTER</span><span>XLOOKUP</span></div>
+      </div>
+      <div class="project-row" style="margin-bottom:0">
+        <div class="label">Result</div>
+        <p>Reconciliation across 20+ branches that previously took hours became fully automated and real-time. Cut from 14 days to 6 hours. 99% duplicate elimination. Management now has daily visibility into branch-level financial accuracy without manual effort.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3>4. Quality Laundry — Android Operations App</h3>
+      <div class="project-sub">End-to-End Laundry Business Management System (v1.4.11 Production)</div>
+    </div>
+    <div class="project-body">
+      <div class="project-row">
+        <div class="label">The Problem</div>
+        <p>Small-to-medium laundry businesses operating pickup and delivery services had no unified system to coordinate customers, couriers, and admin. Order status was tracked manually, communication was scattered, and there was no visibility into operations.</p>
+      </div>
+      <div class="project-row">
+        <div class="label">What I Built</div>
+        <p>Designed and built a full Android application connecting three roles: customer, courier, and admin. The system handles the complete order lifecycle — customer creates a pickup order, courier navigates to the location and handles pickup, admin processes the laundry and inputs weight and payment, courier delivers the finished order. Includes real-time chat, push notifications, map-based pickup location, reporting dashboard, and data export.</p>
+      </div>
+      <div class="project-row">
+        <div class="label">Tools Used</div>
+        <div class="tools-row"><span>Android (Kotlin)</span><span>Jetpack Compose</span><span>Node.js Backend</span><span>Firebase Realtime Database</span><span>REST API</span><span>Push Notifications</span><span>Google Maps</span></div>
+      </div>
+      <div class="project-row" style="margin-bottom:0">
+        <div class="label">Result</div>
+        <p>A complete operational system for laundry businesses that replaces manual coordination with an automated, role-based workflow. Built end-to-end — from mobile UI to backend API to real-time database. Demonstrates ability to architect and ship full production systems independently.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3>5. POS &amp; Inventory System — Nie Buket</h3>
+      <div class="project-sub">Premium Bouquet &amp; Gift Shop — Full-Stack PWA</div>
+    </div>
+    <div class="project-body">
+      <div class="project-row">
+        <div class="label">The Problem</div>
+        <p>No digital system for managing sales, stock, and receipts. Transactions done manually with zero record keeping or reporting.</p>
+      </div>
+      <div class="project-row">
+        <div class="label">What I Built</div>
+        <p>Built a full-stack Progressive Web App with Express.js + MongoDB Atlas backend. Features include product &amp; stock management, transaction history, thermal receipt printing via Bluetooth, and real-time low-stock alerts. Deployed live on Vercel.</p>
+      </div>
+      <div class="project-row">
+        <div class="label">Tools Used</div>
+        <div class="tools-row"><span>Node.js</span><span>Express.js</span><span>MongoDB Atlas</span><span>React</span><span>PWA</span><span>Vercel</span><span>Bluetooth Printer</span></div>
+      </div>
+      <div class="project-row" style="margin-bottom:0">
+        <div class="label">Result</div>
+        <p>Fully digitized operations. Every sale is recorded, stock is tracked automatically, and receipts print instantly via Bluetooth.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why Work With Me -->
+  <h2 class="section">W H Y &nbsp; W O R K &nbsp; W I T H &nbsp; M E</h2>
+  <div class="why-grid">
+    <div class="why-card">
+      <h4>I understand the problem from inside</h4>
+      <p>I have worked in operations. I know what breaks in the field. The systems I build solve real problems, not theoretical ones.</p>
+    </div>
+    <div class="why-card">
+      <h4>Everything has been proven in production</h4>
+      <p>All systems in this portfolio ran in real operations. Not demo environments, not practice projects. Real data, real teams, real scale.</p>
+    </div>
+    <div class="why-card">
+      <h4>Cross-industry adaptability</h4>
+      <p>Telecoms, logistics, and now app development. The same principles apply. The same approach works. I adapt quickly.</p>
+    </div>
+    <div class="why-card">
+      <h4>Results over complexity</h4>
+      <p>The goal is never an impressive-looking system. The goal is giving time back to the team. Simple, reliable, and actually used.</p>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <h2 class="section">C O N T A C T</h2>
+  <div class="contact-table">
+    <div class="contact-cell">
+      <div class="c-label">Email</div>
+      <div class="c-value">muhammad.tharmizy@gmail.com</div>
+    </div>
+    <div class="contact-cell">
+      <div class="c-label">WhatsApp</div>
+      <div class="c-value">+62 853-4202-0433</div>
+    </div>
+    <div class="contact-cell">
+      <div class="c-label">Telegram</div>
+      <div class="c-value">@tamtam2492</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Portfolio — Muhammad Tharmizy Tahir, ST &nbsp;|&nbsp; tharmizy-portfolio.vercel.app &nbsp;|&nbsp; Makassar, Indonesia
+  </div>
+
+</div>
+</body>
+</html>
