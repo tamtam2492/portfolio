@@ -85,7 +85,8 @@ const clients = [
         solution: "Built a full-stack Progressive Web App with Express.js + MongoDB Atlas backend. Features include product & stock management, transaction history, thermal receipt printing via Bluetooth, and real-time low-stock alerts.",
         roi: "Fully digitized operations. Every sale is recorded, stock is tracked automatically, and receipts print instantly. Deployed live on Vercel.",
         tools: ["Node.js", "Express.js", "MongoDB Atlas", "React", "PWA", "Vercel", "Bluetooth Printer"],
-        icon: <Database className="w-5 h-5 text-pink-400" />
+        icon: <Database className="w-5 h-5 text-pink-400" />,
+        image: "/niebuket-proof.jpg"
       },
     ]
   },
@@ -104,7 +105,8 @@ const clients = [
         solution: "Full-stack Android app (v1.4.11) menghubungkan 3 role — Customer, Kurir, Admin — dengan alur operasional end-to-end: buat pesanan → pickup → proses → delivery → selesai. Fitur: chat real-time, GPS tracking kurir, push notification (FCM), 18 API endpoint, laporan harian/mingguan/bulanan dengan export XLSX, JWT auth, dan security hardening.",
         roi: "Operasional laundry sepenuhnya terdigitalisasi. Status pesanan real-time untuk semua pihak. Laporan otomatis menggantikan pencatatan manual. APK production dirilis dan aktif digunakan.",
         tools: ["Kotlin", "Jetpack Compose", "Firebase Realtime DB", "FCM", "Express.js", "MongoDB Atlas", "JWT", "Google Maps", "ExcelJS", "Vercel"],
-        icon: <Smartphone className="w-5 h-5 text-orange-400" />
+        icon: <Smartphone className="w-5 h-5 text-orange-400" />,
+        image: "/quality-laundry-proof.png"
       },
     ]
   }
