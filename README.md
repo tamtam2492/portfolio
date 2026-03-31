@@ -38,6 +38,12 @@ I'm not just a developer — I've managed **50+ field agents across 5 cities in 
 | **Payment Receipt Automation** | 500+ transactions/day • 95% accuracy • < 10 sec processing • zero manual entry |
 | **Field Team Monitoring** | 50+ agents • 5 cities • 42% faster task completion • 8 hrs/day overhead eliminated |
 
+<details>
+<summary>📸 Proof of Work — Payment Receipt Automation</summary>
+<br>
+<img src="https://tharmizy-portfolio.vercel.app/payment-automation-proof.jpg" alt="n8n Workflow + Telegram Receipt + Google Sheets" width="100%" />
+</details>
+
 ### PT Maulagi Indo Solusi — Logistics Operations
 | System | Impact |
 |---|---|
@@ -48,10 +54,22 @@ I'm not just a developer — I've managed **50+ field agents across 5 cities in 
 |---|---|
 | **POS & Inventory System** | Full-stack PWA • live on Vercel • thermal printing • real-time stock alerts |
 
+<details>
+<summary>📸 Proof of Work — Nie Buket POS</summary>
+<br>
+<img src="https://tharmizy-portfolio.vercel.app/niebuket-proof.jpg" alt="Nie Buket POS Dashboard" width="100%" />
+</details>
+
 ### Quality Laundry — Android Operations App
 | System | Impact |
 |---|---|
 | **Laundry Ecosystem** | 3 roles (Customer/Kurir/Admin) • GPS tracking • real-time chat • FCM push notif • v1.4.11 production |
+
+<details>
+<summary>📸 Proof of Work — Quality Laundry</summary>
+<br>
+<img src="https://tharmizy-portfolio.vercel.app/quality-laundry-proof.png" alt="Quality Laundry — Login, Admin, Kurir, Customer" width="100%" />
+</details>
 
 ---
 
