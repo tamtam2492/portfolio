@@ -117,7 +117,7 @@ const stats = [
   { label: "Manual Work Eliminated", value: "100%" },
   { label: "AI/OCR Accuracy", value: "95%+" },
   { label: "Agents Managed", value: "50+" },
-  { label: "Monthly Savings/Client", value: "$3.5k+" }
+  { label: "Monthly Savings Delivered", value: "$3.5k+" }
 ];
 
 export default function App() {
