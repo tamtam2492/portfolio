@@ -50,6 +50,12 @@ I'm not just a developer — I've managed **50+ field agents across 5 cities in 
 |---|---|
 | **Expedition Reconciliation Engine** | 80+ branches • 2 areas • Rp90M+/month • 6 banks • reconciliation cut from **14 days → 6 hours** • 99% duplicate elimination |
 
+<details>
+<summary>📸 Proof of Work — Maulagi Reconciliation</summary>
+<br>
+<img src="https://tharmizy-portfolio.vercel.app/maulagi-proof.jpg" alt="Google Forms Input + Excel Report Overview" width="100%" />
+</details>
+
 ### Nie Buket — Premium Bouquet & Gift Shop
 | System | Impact |
 |---|---|
