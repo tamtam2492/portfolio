@@ -26,7 +26,7 @@
 
 I build the **"Final Brain"** logic for enterprise workflows. From AI-driven payment validation to multi-city logistics engines, I engineer systems that survive the field.
 
-I'm not just a developer — I've managed **50+ field agents across 5 cities**. I know what breaks in the real world, and I build automation that handles it.
+I'm not just a developer — I've managed **50+ field agents across 5 cities in Sulawesi** (Makassar, Manado, Palu, Kendari, Gorontalo). I know what breaks in the real world, and I build automation that handles it.
 
 ---
 

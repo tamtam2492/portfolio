@@ -167,6 +167,9 @@ export default function App() {
               <p className="text-lg md:text-xl text-brand-muted mb-6 leading-relaxed max-w-2xl">
                 I build the <span className="text-white font-medium italic">"Final Brain"</span> logic for enterprise workflows — and I measure success in <span className="text-white font-semibold">hours reclaimed, errors eliminated, and money saved</span>. Not in lines of code.
               </p>
+              <p className="text-sm text-brand-muted mb-6 leading-relaxed max-w-2xl">
+                Proven leadership managing field operations across <span className="text-white font-semibold">5 cities in Sulawesi</span> (Makassar, Manado, Palu, Kendari, Gorontalo) — I know what breaks in the real world, and I build automation that survives it.
+              </p>
               <blockquote className="border-l-2 border-brand-accent pl-5 py-1 mb-10 max-w-2xl">
                 <p className="text-sm italic text-brand-muted leading-relaxed">"As long as there is data that needs to be tracked, I can automate it. Because I have proven it in the field."</p>
               </blockquote>
@@ -178,6 +181,14 @@ export default function App() {
                   className="bg-brand-accent text-white px-8 py-4 rounded font-bold flex items-center gap-2 hover:scale-105 transition-transform"
                 >
                   Hire Me Now <ArrowRight className="w-4 h-4" />
+                </a>
+                <a
+                  href="https://www.fiverr.com/tamtam2492"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-[#1DBF73] text-[#1DBF73] px-8 py-4 rounded font-bold flex items-center gap-2 hover:bg-[#1DBF73] hover:text-white transition-all"
+                >
+                  Start Your Transformation <Globe className="w-4 h-4" />
                 </a>
                 <div className="flex items-center gap-4 px-6 py-4 rounded border border-brand-border font-mono text-xs text-brand-muted">
                   <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
