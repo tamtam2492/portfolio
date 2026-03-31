@@ -9,6 +9,7 @@
 > *"As long as there is data that needs to be tracked, I can automate it. Because I have proven it in the field."*
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-tharmizy--portfolio.vercel.app-0A0A0B?style=for-the-badge&logo=vercel&logoColor=white)](https://tharmizy-portfolio.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad_Tharmizy-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammadtharmizy)
 [![Email](https://img.shields.io/badge/Email-muhammad.tharmizy%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muhammad.tharmizy@gmail.com)
 [![Telegram](https://img.shields.io/badge/Telegram-@tamtam2492-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/tamtam2492)
 

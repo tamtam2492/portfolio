@@ -34,7 +34,7 @@ const clients = [
         title: "Payment Receipt Automation",
         problem: "Agents manually processed dozens of payment receipts daily via Telegram. High error rates and zero consistency.",
         solution: "Built an end-to-end n8n workflow. AI/OCR extracts data from receipt photos, validates it, and syncs to Google Sheets with auto-confirmation messages.",
-        roi: "Manual data entry dropped to zero. 95% accuracy achieved. Processing time slashed from hours to under 10 seconds. Handles 500+ transactions daily without performance degradation.",
+        roi: "Manual data entry dropped to zero. 95% AI/OCR accuracy achieved. 80% reduction in manual processing time — from hours to under 10 seconds per receipt. Handles 500+ transactions daily. Zero transcription errors across the entire collection team.",
         tools: ["n8n", "Telegram Bot API", "AI / OCR", "Google Sheets", "REST API"],
         icon: <Zap className="w-5 h-5 text-blue-400" />
       },
@@ -109,10 +109,10 @@ const clients = [
 ];
 
 const stats = [
-  { label: "Manual Work Reduced", value: "100%" },
-  { label: "Data Accuracy", value: "95%+" },
+  { label: "Manual Work Eliminated", value: "100%" },
+  { label: "AI/OCR Accuracy", value: "95%+" },
   { label: "Agents Managed", value: "50+" },
-  { label: "Service Floor", value: "$3.5k+" }
+  { label: "Monthly Savings/Client", value: "$3.5k+" }
 ];
 
 export default function App() {
@@ -130,6 +130,7 @@ export default function App() {
             <a href="#portfolio" className="hover:text-white transition-colors">Portfolio</a>
             <a href="#contact" className="hover:text-white transition-colors">Contact</a>
             <a href="https://github.com/tamtam2492" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a>
+            <a href="https://www.linkedin.com/in/muhammadtharmizy" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
           </div>
           <a 
             href="#contact"
@@ -160,20 +161,22 @@ export default function App() {
                 <Cpu className="w-3 h-3" /> Operations Systems Builder
               </div>
               <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-[1.0] mb-8 text-gradient">
-                Transforming operational chaos into automated precision.
+                Turning operational chaos into $3,500+ monthly savings.
               </h1>
               <p className="text-lg md:text-xl text-brand-muted mb-6 leading-relaxed max-w-2xl">
-                I build the <span className="text-white font-medium italic">"Final Brain"</span> logic for enterprise workflows. From AI-driven payment validation to multi-city logistics engines, I engineer systems that survive the field.
+                I build the <span className="text-white font-medium italic">"Final Brain"</span> logic for enterprise workflows — and I measure success in <span className="text-white font-semibold">hours reclaimed, errors eliminated, and money saved</span>. Not in lines of code.
               </p>
               <blockquote className="border-l-2 border-brand-accent pl-5 py-1 mb-10 max-w-2xl">
                 <p className="text-sm italic text-brand-muted leading-relaxed">"As long as there is data that needs to be tracked, I can automate it. Because I have proven it in the field."</p>
               </blockquote>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="#portfolio"
+                  href="https://wa.me/6285342020433?text=Hi%20Tharmizy%2C%20I%20want%20to%20discuss%20a%20project"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-brand-accent text-white px-8 py-4 rounded font-bold flex items-center gap-2 hover:scale-105 transition-transform"
                 >
-                  View Solutions <ArrowRight className="w-4 h-4" />
+                  Hire Me Now <ArrowRight className="w-4 h-4" />
                 </a>
                 <div className="flex items-center gap-4 px-6 py-4 rounded border border-brand-border font-mono text-xs text-brand-muted">
                   <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
@@ -485,13 +488,13 @@ export default function App() {
             viewport={{ once: true }}
             className="text-center mb-20"
           >
-            <h2 className="text-xs font-bold uppercase tracking-[0.4em] text-brand-accent mb-6">Ready to Automate?</h2>
+            <h2 className="text-xs font-bold uppercase tracking-[0.4em] text-brand-accent mb-6">Stop Losing Money to Manual Work</h2>
             <h3 className="text-5xl md:text-8xl font-black tracking-tighter mb-6 leading-none">
               Let's build your<br />
-              <span className="text-brand-accent">Operational Engine.</span>
+              <span className="text-brand-accent">$3,500+/mo Engine.</span>
             </h3>
             <p className="text-brand-muted max-w-xl mx-auto leading-relaxed">
-              Available for Q2 2026. Every engagement starts with a 30-minute diagnostic call — no pitch, just clarity.
+              Every hour your team spends on manual data entry is money left on the table. I fix that — fast. Message me now and let's scope your system.
             </p>
           </motion.div>
 
@@ -535,6 +538,10 @@ export default function App() {
           </div>
 
           <div className="text-center">
+            <div className="flex justify-center gap-6 mb-4">
+              <a href="https://github.com/tamtam2492" target="_blank" rel="noopener noreferrer" className="text-brand-muted hover:text-white text-[11px] font-bold uppercase tracking-widest transition-colors">GitHub</a>
+              <a href="https://www.linkedin.com/in/muhammadtharmizy" target="_blank" rel="noopener noreferrer" className="text-brand-muted hover:text-white text-[11px] font-bold uppercase tracking-widest transition-colors">LinkedIn</a>
+            </div>
             <div className="text-brand-muted text-[10px] uppercase tracking-widest font-bold">
               Based in Makassar, Indonesia • Serving Global Enterprise Clients
             </div>
