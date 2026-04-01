@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0e75b6&height=200&section=header&text=Muhammad%20Tharmizy&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Workflow%20Automation%20Engineer%20%7C%20Operations%20Systems%20Builder&descAlignY=58&descSize=18" width="100%"/>
 
-![](https://komarev.com/ghpvc/?username=tamtam2492&style=for-the-badge&color=0e75b6&label=)
+[![](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftamtam2492&count_bg=%230e75b6&title_bg=%230e75b6&icon=eye.svg&icon_color=%23ffffff&title=%20&edge_flat=true)](https://github.com/tamtam2492)
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=0E75B6&center=true&vCenter=true&width=600&lines=n8n+%7C+AI+%7C+Telegram+Bot+%7C+Android+%7C+Excel;500%2B+transactions%2Fday+automated;14+days+%E2%86%92+6+hours+reconciliation;50%2B+field+agents+across+5+cities)](https://tharmizy-portfolio.vercel.app)
 
@@ -146,6 +146,10 @@ I'm not just a developer — I've managed **50+ field agents across 5 cities in 
 ## 📈 GitHub Stats
 
 <div align="center">
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=tamtam2492&theme=tokyonight&no-frame=true&row=1&column=6&margin-w=10)](https://github.com/tamtam2492)
+
+<br/>
 
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=tamtam2492&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tamtam2492&layout=compact&theme=tokyonight&hide_border=true"/>
