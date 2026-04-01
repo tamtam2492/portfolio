@@ -13,8 +13,6 @@
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-tharmizy--portfolio.vercel.app-0A0A0B?style=for-the-badge&logo=vercel&logoColor=white)](https://tharmizy-portfolio.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad_Tharmizy-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammadtharmizy)
 [![Fiverr](https://img.shields.io/badge/Fiverr-tamtam2492-1DBF73?style=for-the-badge&logo=fiverr&logoColor=white)](https://www.fiverr.com/tamtam2492)
-[![Upwork](https://img.shields.io/badge/Upwork-Hire_Me-6FDA44?style=for-the-badge&logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/~019ed2870c749de3b9)
-[![Fastwork](https://img.shields.io/badge/Fastwork-muhammad.tharmizy-FF6B35?style=for-the-badge)](https://fastwork.id/user/muhammad.tharmizy)
 [![Email](https://img.shields.io/badge/Email-muhammad.tharmizy%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muhammad.tharmizy@gmail.com)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-+62_853--4202--0433-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6285342020433?text=Hi%20Tharmizy%2C%20I%20want%20to%20discuss%20a%20project)
 [![Telegram](https://img.shields.io/badge/Telegram-@tamtam2492-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/tamtam2492)
