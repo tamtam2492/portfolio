@@ -1,6 +1,10 @@
-<div align="center">
+<div align="right">
 
 [![](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftamtam2492&count_bg=%230e75b6&title_bg=%230e75b6&icon=eye.svg&icon_color=%23ffffff&title=%20&edge_flat=true)](https://github.com/tamtam2492)
+
+</div>
+
+<div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0e75b6&height=200&section=header&text=Muhammad%20Tharmizy&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Workflow%20Automation%20Engineer%20%7C%20Operations%20Systems%20Builder&descAlignY=58&descSize=18" width="100%"/>
 
