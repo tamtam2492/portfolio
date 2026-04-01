@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>CV — Muhammad Tharmizy Tahir, S.T.</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+  font-size: 10.5pt;
+  color: #1a1a1a;
+  background: #fff;
+  line-height: 1.55;
+}
+.page {
+  max-width: 794px;
+  margin: 0 auto;
+  padding: 40px 52px;
+}
+/* ── Header ── */
+.header {
+  background: #1e3a5f;
+  color: #fff;
+  border-radius: 6px;
+  padding: 20px 24px 16px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header-text { flex: 1; }
+.header h1 { font-size: 22pt; font-weight: 700; letter-spacing: -0.3px; }
+.header .subtitle { font-size: 10pt; color: #b8d4f0; margin-top: 4px; }
+.header .tagline { font-size: 9pt; color: #7fa8cc; margin-top: 3px; font-style: italic; }
+.header .contact-line { font-size: 8.5pt; color: #9bbfe0; margin-top: 8px; line-height: 1.7; }
+.header .contact-line a { color: #9bbfe0; text-decoration: none; }
+.foto {
+  width: 90px; height: 110px;
+  object-fit: cover; object-position: top;
+  border-radius: 5px;
+  border: 2px solid #3a6ea0;
+  flex-shrink: 0;
+}
+/* ── Section heading ── */
+h2.section {
+  font-size: 8.5pt;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #1e3a5f;
+  border-bottom: 1.5px solid #1e3a5f;
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+  margin-top: 22px;
+}
+/* ── Stats bar ── */
+.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border: 1px solid #c8d8e8;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+.stat-cell {
+  padding: 10px 6px;
+  text-align: center;
+  border-right: 1px solid #c8d8e8;
+}
+.stat-cell:last-child { border-right: none; }
+.stat-val { font-size: 16pt; font-weight: 700; color: #1e3a5f; }
+.stat-label { font-size: 7.5pt; color: #666; margin-top: 2px; }
+/* ── Skills ── */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 28px;
+}
+.skills-col h4 { font-weight: 700; font-size: 10pt; margin-bottom: 5px; color: #1e3a5f; }
+.skills-col ul { padding-left: 14px; }
+.skills-col li { font-size: 9.5pt; color: #333; margin-bottom: 2px; }
+/* ── Tools ── */
+.tools-line { font-size: 8.5pt; color: #333; margin-top: 10px; line-height: 2; }
+.tools-line span {
+  display: inline-block;
+  background: #eef3f8;
+  border-radius: 3px;
+  padding: 1px 6px;
+  margin: 2px 2px;
+}
+/* ── Project / Job ── */
+.job { margin-bottom: 14px; page-break-inside: avoid; }
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+.job-title { font-size: 10.5pt; font-weight: 700; color: #1a1a1a; }
+.job-company { font-size: 10pt; font-weight: 700; color: #1e3a5f; }
+.job-meta { font-size: 8.5pt; color: #666; font-style: italic; white-space: nowrap; }
+.job ul { padding-left: 16px; margin-top: 4px; }
+.job li { font-size: 9.5pt; color: #333; margin-bottom: 2px; }
+/* ── Education ── */
+.edu { margin-top: 8px; }
+.edu .degree { font-weight: 700; font-size: 10.5pt; }
+.edu .uni { color: #1e3a5f; font-size: 10pt; }
+.edu .year { font-size: 9pt; color: #666; font-style: italic; }
+/* ── Info row ── */
+.info-row { display: flex; gap: 6px; margin-bottom: 3px; font-size: 9.5pt; }
+.info-key { font-weight: 700; min-width: 80px; color: #1e3a5f; }
+.info-val { color: #333; }
+/* ── Footer ── */
+.footer {
+  text-align: center;
+  font-size: 8.5pt;
+  color: #888;
+  margin-top: 28px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+}
+@media print {
+  body { background: #fff; }
+  .page { padding: 28px 36px; max-width: 100%; }
+  @page { margin: 1.2cm; size: A4; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-text">
+    <h1>Muhammad Tharmizy Tahir, S.T.</h1>
+    <div class="subtitle">Workflow Automation Engineer &nbsp;|&nbsp; Operations Systems Builder</div>
+    <div class="tagline">n8n &nbsp;·&nbsp; AI/OCR &nbsp;·&nbsp; Telegram Bot &nbsp;·&nbsp; Android &nbsp;·&nbsp; Excel &nbsp;·&nbsp; Power BI</div>
+    <div class="contact-line">
+      muhammad.tharmizy@gmail.com &nbsp;|&nbsp; +62 853-4202-0433 &nbsp;|&nbsp; Makassar, Indonesia &nbsp;|&nbsp; Available for Remote Worldwide<br/>
+      <a href="https://linkedin.com/in/muhammadtharmizy">linkedin.com/in/muhammadtharmizy</a> &nbsp;|&nbsp;
+      <a href="https://github.com/tamtam2492">github.com/tamtam2492</a>
+    </div>
+  </div>
+</div>
+
+<!-- PROFILE -->
+<h2 class="section">P R O F I L E</h2>
+<p style="font-size:9.5pt;color:#222;margin-bottom:6px;">
+I build the &#x201C;Final Brain&#x201D; logic for enterprise workflows &#x2014; and I measure success in hours reclaimed, errors eliminated,
+and money saved. Not in lines of code.
+</p>
+<p style="font-size:9.5pt;color:#222;margin-bottom:6px;">
+Proven in production: payment receipt automation via Telegram+n8n+AI/OCR that eliminated 100% of manual data entry.
+An expedition reconciliation engine for 80+ branches that cut reconciliation from 14 days to 6 hours.
+A full-stack POS &amp; inventory PWA for a retail shop. A production Android laundry app (v1.4.11) with 3 roles and GPS tracking.
+</p>
+<p style="font-size:9.5pt;color:#222;">
+Beyond the technical side, I&rsquo;ve led 50+ field agents across 5 cities in Sulawesi.
+I don&rsquo;t just build systems &mdash; I understand what breaks in the real world and how to design automation that survives it.
+</p>
+
+<!-- STATS -->
+<h2 class="section">M E A S U R A B L E &nbsp; I M P A C T</h2>
+<div class="stats-bar">
+  <div class="stat-cell"><div class="stat-val">100%</div><div class="stat-label">Manual Work Eliminated</div></div>
+  <div class="stat-cell"><div class="stat-val">95%+</div><div class="stat-label">AI/OCR Accuracy</div></div>
+  <div class="stat-cell"><div class="stat-val">50+</div><div class="stat-label">Field Agents Managed</div></div>
+  <div class="stat-cell"><div class="stat-val">$3.5k+</div><div class="stat-label">Monthly Savings / Client</div></div>
+</div>
+
+<!-- CORE SKILLS -->
+<h2 class="section">C O R E &nbsp; S K I L L S</h2>
+<div class="skills-grid">
+  <div class="skills-col">
+    <h4>Automation &amp; Systems</h4>
+    <ul>
+      <li>Workflow automation — n8n, Telegram Bot, WhatsApp</li>
+      <li>API &amp; webhook integration</li>
+      <li>AI/OCR for document data extraction</li>
+      <li>Google Sheets automation &amp; data pipelines</li>
+      <li>Android app development (Kotlin, Jetpack Compose)</li>
+    </ul>
+  </div>
+  <div class="skills-col">
+    <h4>Operations &amp; Data</h4>
+    <ul>
+      <li>Microsoft Excel advanced — SUMIFS, LET, FILTER, XLOOKUP</li>
+      <li>Multi-branch data reconciliation</li>
+      <li>Performance monitoring &amp; dashboard design</li>
+      <li>Multi-city team leadership (50+ people, 5 cities)</li>
+      <li>Power BI — reporting &amp; data visualization</li>
+    </ul>
+  </div>
+</div>
+<div class="tools-line">
+  <span>n8n</span><span>Telegram Bot API</span><span>WhatsApp Automation</span><span>Google Sheets</span><span>Google Forms</span>
+  <span>Google Drive</span><span>Microsoft Excel</span><span>Power BI</span><span>AI / OCR</span><span>REST API</span>
+  <span>Firebase Realtime DB</span><span>FCM</span><span>Android — Kotlin + Jetpack Compose</span>
+  <span>Node.js</span><span>Express.js</span><span>MongoDB Atlas</span><span>React</span><span>PWA</span><span>Vercel</span><span>JWT</span><span>Google Maps API</span>
+</div>
+
+<!-- FREELANCE PROJECTS -->
+<h2 class="section">F R E E L A N C E &nbsp; P R O J E C T S &nbsp; &amp; &nbsp; S Y S T E M S</h2>
+
+<div class="job">
+  <div class="job-header">
+    <span><span class="job-title">Expedition Reconciliation Engine</span> &nbsp;|&nbsp; <span class="job-company">PT Maulagi Indo Solusi</span></span>
+    <span class="job-meta">Jan 2026 – Present &nbsp;|&nbsp; Makassar / Remote</span>
+  </div>
+  <ul>
+    <li>80+ branches across 2 operational areas (SE Sulawesi &amp; Outer Makassar), Rp90M+/month transaction volume</li>
+    <li>End-to-end pipeline: Google Forms &#x2192; Google Drive + Sheets &#x2192; 49-column Excel reconciliation engine</li>
+    <li>Matches shipping costs vs actual transfers across 6 banks (BRI, BCA, ShopeePay, GoPay, BNI, DANA)</li>
+    <li>Reconciliation cut from <strong>14 days to 6 hours</strong>; 99% of duplicates eliminated</li>
+    <li>Daily, monthly, and per-bank summaries auto-generated for management</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header">
+    <span><span class="job-title">Payment Receipt Automation System</span> &nbsp;|&nbsp; <span class="job-company">Telkomsel — Collection Operations</span></span>
+    <span class="job-meta">2020 – 2023 &nbsp;|&nbsp; Sulawesi</span>
+  </div>
+  <ul>
+    <li>End-to-end n8n workflow: receipt photo via Telegram &#x2192; AI/OCR extraction &#x2192; validation &#x2192; Google Sheets sync + auto-confirmation</li>
+    <li>Manual data entry dropped to zero; 95% AI/OCR accuracy; &lt;10 seconds per transaction</li>
+    <li>Handles 500+ daily transactions; zero transcription errors across the entire collection team</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header">
+    <span><span class="job-title">Field Team Monitoring System</span> &nbsp;|&nbsp; <span class="job-company">Telkomsel — Collection Operations</span></span>
+    <span class="job-meta">2020 – 2025 &nbsp;|&nbsp; Sulawesi (5 Cities)</span>
+  </div>
+  <ul>
+    <li>Excel backbone for 50+ agents across Makassar, Manado, Palu, Kendari, Gorontalo</li>
+    <li>Automatic aggregation of ACH Target, Recovery Rate, and Gap Analysis across all cities</li>
+    <li>Coordination overhead reduced by 8 hours/day; all manual daily reporting replaced</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header">
+    <span><span class="job-title">POS &amp; Inventory Management System</span> &nbsp;|&nbsp; <span class="job-company">Nie Buket — Premium Bouquet &amp; Gift Shop</span></span>
+    <span class="job-meta">2024 &nbsp;|&nbsp; Makassar</span>
+  </div>
+  <ul>
+    <li>Full-stack PWA: Express.js + MongoDB Atlas + React; deployed live on Vercel</li>
+    <li>Features: product &amp; stock management, transaction history, Bluetooth thermal printing, low-stock alerts</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header">
+    <span><span class="job-title">Quality Laundry Android Ecosystem</span> &nbsp;|&nbsp; <span class="job-company">Quality Laundry</span></span>
+    <span class="job-meta">2024 – 2025 &nbsp;|&nbsp; Makassar</span>
+  </div>
+  <ul>
+    <li>Production Android app v1.4.11, 3 roles: Customer, Courier, Admin — end-to-end order flow</li>
+    <li>Real-time chat, courier GPS tracking, FCM push notifications, JWT auth, 18 API endpoints, XLSX reports</li>
+    <li>Stack: Kotlin, Jetpack Compose, Firebase Realtime DB, Express.js, MongoDB Atlas</li>
+  </ul>
+</div>
+
+<!-- WORK EXPERIENCE -->
+<h2 class="section">W O R K &nbsp; E X P E R I E N C E</h2>
+
+<div class="job">
+  <div class="job-header">
+    <span><span class="job-title">Operations Team Leader (IndiHome)</span> &nbsp;|&nbsp; <span class="job-company">Transkom Integrasi Mandiri — Telkomsel</span></span>
+    <span class="job-meta">Jan – Oct 2025 &nbsp;|&nbsp; Sulawesi</span>
+  </div>
+  <ul>
+    <li>Led 40+ field agents across Makassar, Bone, Parepare, and Kendari</li>
+    <li>Designed daily performance monitoring framework across sub-regions</li>
+    <li>Handled real-time escalations across geographically dispersed operations</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header">
+    <span><span class="job-title">Dual Project Team Leader — Mobile + Fixed (50+ Team)</span> &nbsp;|&nbsp; <span class="job-company">PT Kinarya &amp; PT Transkom</span></span>
+    <span class="job-meta">Jan – Apr 2025 &nbsp;|&nbsp; Sulawesi (7 Cities)</span>
+  </div>
+  <ul>
+    <li>Sole manager of two simultaneous Telkomsel projects: Kartu Halo (Mobile) &amp; IndiHome (Fixed)</li>
+    <li>50+ combined team members; centralized performance tracking system for both projects</li>
+    <li>Delivered consistent reporting to two separate management chains with zero overlap</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header">
+    <span><span class="job-title">Operations Team Leader — Kartu Halo (Multi-City)</span> &nbsp;|&nbsp; <span class="job-company">PT Kinarya Alihdaya Mandiri — Telkomsel</span></span>
+    <span class="job-meta">Apr 2023 – Apr 2025 &nbsp;|&nbsp; Sulawesi (6 Cities)</span>
+  </div>
+  <ul>
+    <li>Managed 10–15 agents in Makassar, Gowa, Manado, Kendari, Palu, and Gorontalo</li>
+    <li>Built Excel monitoring tools from scratch; designed weekly/monthly performance evaluation framework</li>
+    <li>Led full recruitment cycle: sourcing, interviewing, and onboarding new agents</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header">
+    <span><span class="job-title">Team Leader &amp; Automation Builder — Kartu Halo</span> &nbsp;|&nbsp; <span class="job-company">PT Infomedia Nusantara — Telkomsel</span></span>
+    <span class="job-meta">Oct 2020 – Apr 2023 &nbsp;|&nbsp; Sulawesi (7 Cities)</span>
+  </div>
+  <ul>
+    <li>Built payment receipt automation (Telegram Bot + n8n) — eliminated 100% of manual data entry</li>
+    <li>Built field team monitoring system from scratch as the first structured performance tracking system</li>
+    <li>Managed 10–15 agents across 7 cities: Makassar, Parepare, Gowa, Manado, Kendari, Palu, Gorontalo</li>
+  </ul>
+</div>
+
+<!-- EDUCATION -->
+<h2 class="section">E D U C A T I O N</h2>
+<div class="edu">
+  <span class="degree">Bachelor of Informatics Engineering (S.T.)</span> &nbsp;&mdash;&nbsp;
+  <span class="uni">Universitas Nurtanio, Bandung, Indonesia</span><br/>
+  <span class="year">2014 – 2017</span>
+</div>
+
+<!-- ADDITIONAL -->
+<h2 class="section">A D D I T I O N A L &nbsp; I N F O R M A T I O N</h2>
+<div class="info-row"><span class="info-key">Birth</span><span class="info-val">December 24, 1992 &mdash; Makassar, Indonesia</span></div>
+<div class="info-row"><span class="info-key">Languages</span><span class="info-val">Indonesian (Native) &nbsp;&middot;&nbsp; English (Elementary &mdash; written, AI-assisted)</span></div>
+<div class="info-row"><span class="info-key">Availability</span><span class="info-val">Open to remote worldwide &nbsp;&middot;&nbsp; Open to on-site in Sulawesi</span></div>
+<div class="info-row"><span class="info-key">Freelance</span><span class="info-val">fiverr.com/tamtam2492 &nbsp;|&nbsp; upwork.com/freelancers/~019ed2870c749de3b9 &nbsp;|&nbsp; fastwork.id/user/muhammad.tharmizy</span></div>
+
+<div class="footer">
+  CV &mdash; Muhammad Tharmizy Tahir, S.T. &nbsp;|&nbsp; muhammad.tharmizy@gmail.com &nbsp;|&nbsp; +62 853-4202-0433 &nbsp;|&nbsp; Makassar, Indonesia
+</div>
+
+</div>
+</body>
+</html>
