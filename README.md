@@ -1,6 +1,6 @@
 <div align="right">
 
-[![](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftamtam2492&count_bg=%230e75b6&title_bg=%230e75b6&icon=eye.svg&icon_color=%23ffffff&title=%20&edge_flat=true)](https://github.com/tamtam2492)
+![](https://komarev.com/ghpvc/?username=tamtam2492&style=for-the-badge&color=0e75b6&label=VIEWS)
 
 </div>
 
@@ -147,24 +147,13 @@ I'm not just a developer — I've managed **50+ field agents across 5 cities in 
 
 ---
 
-## 📈 GitHub Stats
+## � Find Me
 
 <div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=tamtam2492&theme=tokyonight&no-frame=true&row=1&column=6&margin-w=10)](https://github.com/tamtam2492)
-
-<br/>
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=tamtam2492&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tamtam2492&layout=compact&theme=tokyonight&hide_border=true"/>
-
-<br/>
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=tamtam2492&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
-
-<br/>
-
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=tamtam2492&theme=tokyo-night&hide_border=true&area=true)](https://github.com/tamtam2492)
+[![Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-tharmizy--portfolio.vercel.app-0e75b6?style=for-the-badge&logo=vercel&logoColor=white)](https://tharmizy-portfolio.vercel.app)
+[![CV Indonesia](https://img.shields.io/badge/📄_CV_Indonesia-Download-10B981?style=for-the-badge)](https://tharmizy-portfolio.vercel.app/cv-id.html)
+[![CV English](https://img.shields.io/badge/📄_CV_English-Download-3B82F6?style=for-the-badge)](https://tharmizy-portfolio.vercel.app/cv-en.html)
 
 </div>
 
