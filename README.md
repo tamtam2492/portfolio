@@ -1,5 +1,7 @@
 <div align="center">
 
+![Profile Views](https://komarev.com/ghpvc/?username=tamtam2492&style=flat&color=grey&label=visitors)
+
 # Muhammad Tharmizy Tahir, ST
 
 **Workflow Automation Engineer | Operations Systems Builder**
@@ -18,8 +20,6 @@
 [![Telegram](https://img.shields.io/badge/Telegram-@tamtam2492-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/tamtam2492)
 
 📍 Makassar, Indonesia — Available for remote & global projects
-
-![Profile Views](https://komarev.com/ghpvc/?username=tamtam2492&style=flat&color=grey&label=visitors)
 
 </div>
 
