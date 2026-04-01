@@ -1,6 +1,6 @@
 <div align="center">
 
-![Profile Views](https://komarev.com/ghpvc/?username=tamtam2492&style=for-the-badge&color=red&label=VISITORS)
+![](https://komarev.com/ghpvc/?username=tamtam2492&style=for-the-badge&color=0e75b6&label=)
 
 # Muhammad Tharmizy Tahir, ST
 
