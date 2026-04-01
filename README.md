@@ -151,11 +151,6 @@ I'm not just a developer — I've managed **50+ field agents across 5 cities in 
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=tamtam2492&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tamtam2492&layout=compact&theme=tokyonight&hide_border=true"/>
-
-<br/>
-
 [![GitHub Streak](https://streak-stats.demolab.com?user=tamtam2492&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
 
 <br/>
