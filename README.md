@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0e75b6&height=200&section=header&text=Muhammad%20Tharmizy&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Workflow%20Automation%20Engineer%20%7C%20Operations%20Systems%20Builder&descAlignY=58&descSize=18" width="100%"/>
 
-[![Profile Views](https://visitorbadge.io/api/visitors?path=tamtam2492%2Ftamtam2492&label=PROFILE%20VIEWS&labelColor=0e75b6&countColor=ffffff&style=for-the-badge)](https://github.com/tamtam2492)
+![](https://komarev.com/ghpvc/?username=tamtam2492&style=for-the-badge&color=0e75b6&label=)
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=0E75B6&center=true&vCenter=true&width=600&lines=n8n+%7C+AI+%7C+Telegram+Bot+%7C+Android+%7C+Excel;500%2B+transactions%2Fday+automated;14+days+%E2%86%92+6+hours+reconciliation;50%2B+field+agents+across+5+cities)](https://tharmizy-portfolio.vercel.app)
 
