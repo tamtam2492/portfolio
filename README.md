@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0e75b6&height=200&section=header&text=Muhammad%20Tharmizy&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Workflow%20Automation%20Engineer%20%7C%20Operations%20Systems%20Builder&descAlignY=58&descSize=18" width="100%"/>
-
 [![](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftamtam2492&count_bg=%230e75b6&title_bg=%230e75b6&icon=eye.svg&icon_color=%23ffffff&title=%20&edge_flat=true)](https://github.com/tamtam2492)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0e75b6&height=200&section=header&text=Muhammad%20Tharmizy&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Workflow%20Automation%20Engineer%20%7C%20Operations%20Systems%20Builder&descAlignY=58&descSize=18" width="100%"/>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=0E75B6&center=true&vCenter=true&width=600&lines=n8n+%7C+AI+%7C+Telegram+Bot+%7C+Android+%7C+Excel;500%2B+transactions%2Fday+automated;14+days+%E2%86%92+6+hours+reconciliation;50%2B+field+agents+across+5+cities)](https://tharmizy-portfolio.vercel.app)
 
@@ -157,6 +157,10 @@ I'm not just a developer — I've managed **50+ field agents across 5 cities in 
 <br/>
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=tamtam2492&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
+
+<br/>
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=tamtam2492&theme=tokyo-night&hide_border=true&area=true)](https://github.com/tamtam2492)
 
 </div>
 
