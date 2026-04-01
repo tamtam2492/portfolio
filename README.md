@@ -56,7 +56,7 @@ I'm not just a developer — I've managed **50+ field agents across 5 cities in 
 
 ## 🏭 Production Systems
 
-<details open>
+<details>
 <summary><b>📡 Telkomsel — Collection Operations Division</b></summary>
 <br>
 
