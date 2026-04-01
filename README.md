@@ -1,6 +1,6 @@
 <div align="right">
 
-<img src="https://profile-counter.glitch.me/tamtam2492/count.svg" alt="Visitor Count" />
+![visitors](https://komarev.com/ghpvc/?username=tamtam2492&style=flat-square&color=0e75b6&label=visitors)
 
 </div>
 
