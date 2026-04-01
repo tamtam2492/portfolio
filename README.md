@@ -19,6 +19,8 @@
 
 📍 Makassar, Indonesia — Available for remote & global projects
 
+![Profile Views](https://komarev.com/ghpvc/?username=tamtam2492&style=flat&color=grey&label=visitors)
+
 </div>
 
 ---
