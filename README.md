@@ -8,13 +8,13 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0e75b6&height=200&section=header&text=Muhammad%20Tharmizy&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Workflow%20Automation%20Engineer%20%7C%20Operations%20Systems%20Builder&descAlignY=58&descSize=18" width="100%"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=0E75B6&center=true&vCenter=true&width=600&lines=n8n+%7C+AI+%7C+Telegram+Bot+%7C+Android+%7C+Excel;500%2B+transactions%2Fday+automated;14+days+%E2%86%92+6+hours+reconciliation;50%2B+field+agents+across+5+cities)](https://tharmizy-portfolio.vercel.app)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=0E75B6&center=true&vCenter=true&width=600&lines=n8n+%7C+AI+%7C+Telegram+Bot+%7C+Android+%7C+Excel;500%2B+transactions%2Fday+automated;14+days+%E2%86%92+6+hours+reconciliation;50%2B+field+agents+across+5+cities)](https://tamtam2492.github.io)
 
 > *"As long as there is data that needs to be tracked, I can automate it. Because I have proven it in the field."*
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-tharmizy--portfolio.vercel.app-0A0A0B?style=for-the-badge&logo=vercel&logoColor=white)](https://tharmizy-portfolio.vercel.app)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-tamtam2492.github.io-0A0A0B?style=for-the-badge&logo=github&logoColor=white)](https://tamtam2492.github.io)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad_Tharmizy-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammadtharmizy)
 [![Fiverr](https://img.shields.io/badge/Fiverr-tamtam2492-1DBF73?style=for-the-badge&logo=fiverr&logoColor=white)](https://www.fiverr.com/tamtam2492)
 [![Email](https://img.shields.io/badge/Email-muhammad.tharmizy%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muhammad.tharmizy@gmail.com)
@@ -65,7 +65,7 @@ I'm not just a developer — I've managed **50+ field agents across 5 cities in 
 | **Payment Receipt Automation** | 500+ transactions/day · 95% accuracy · < 10 sec processing · zero manual entry |
 | **Field Team Monitoring** | 50+ agents · 5 cities · 42% faster task completion · 4–5 hrs/day freed per staff |
 
-<img src="https://tharmizy-portfolio.vercel.app/payment-automation-proof.jpg" alt="n8n Workflow + Telegram Receipt + Google Sheets" width="100%" />
+<img src="https://tamtam2492.github.io/payment-automation-proof.jpg" alt="n8n Workflow + Telegram Receipt + Google Sheets" width="100%" />
 </details>
 
 <details>
@@ -76,7 +76,7 @@ I'm not just a developer — I've managed **50+ field agents across 5 cities in 
 |---|---|
 | **Expedition Reconciliation Engine** | 80+ branches · 2 areas · Rp90M+/month · 6 banks · 14 days → 6 hours · 99% duplicate eliminated |
 
-<img src="https://tharmizy-portfolio.vercel.app/maulagi-proof.jpg" alt="Google Forms Input + Excel Report Overview" width="100%" />
+<img src="https://tamtam2492.github.io/maulagi-proof.jpg" alt="Google Forms Input + Excel Report Overview" width="100%" />
 </details>
 
 <details>
@@ -87,7 +87,7 @@ I'm not just a developer — I've managed **50+ field agents across 5 cities in 
 |---|---|
 | **POS & Inventory System** | Full-stack PWA · live on Vercel · thermal printing · real-time stock alerts |
 
-<img src="https://tharmizy-portfolio.vercel.app/niebuket-proof.jpg" alt="Nie Buket POS Dashboard" width="100%" />
+<img src="https://tamtam2492.github.io/niebuket-proof.jpg" alt="Nie Buket POS Dashboard" width="100%" />
 </details>
 
 <details>
@@ -98,7 +98,7 @@ I'm not just a developer — I've managed **50+ field agents across 5 cities in 
 |---|---|
 | **Laundry Ecosystem** | 3 roles (Customer/Kurir/Admin) · GPS tracking · real-time chat · FCM push notif · v1.4.11 production |
 
-<img src="https://tharmizy-portfolio.vercel.app/quality-laundry-proof.png" alt="Quality Laundry — Login, Admin, Kurir, Customer" width="100%" />
+<img src="https://tamtam2492.github.io/quality-laundry-proof.png" alt="Quality Laundry — Login, Admin, Kurir, Customer" width="100%" />
 </details>
 
 ---
