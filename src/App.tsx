@@ -63,7 +63,7 @@ const clients = [
         title: "Expedition Reconciliation Engine",
         problem: "Manual reconciliation of shipping costs vs transfers across 80+ branches in 2 operational areas (Sulawesi Tenggara & Makassar Outer). Discrepancies went undetected for weeks — reconciliation alone took up to 14 days. Multi-bank payments (BRI, BCA, ShopeePay, GoPay, BNI, DANA) made tracking nearly impossible.",
         solution: "End-to-end data pipeline: branch operators submit transfer proof via Google Forms → auto-stored in Google Drive + Google Sheets → fed into a 49-column Excel reconciliation engine that matches shipping costs against actual bank transfers across all branches and flags discrepancies instantly. Daily, monthly, and per-bank summaries generated automatically.",
-        roi: "Reconciliation time cut from 14 days to 6 hours. 99% of duplicate entries eliminated. Handles Rp90M+ monthly transaction volume across 80+ branches. Full financial visibility — management sees branch-level accuracy daily without manual effort.",
+        roi: "Reduced monthly reconciliation cycle time by over 90% — from 14 days to 6 hours. 99% of duplicate entries eliminated. Handles Rp90M+ monthly transaction volume across 80+ branches. Full financial visibility — management sees branch-level accuracy daily without manual effort.",
         tools: ["Google Forms", "Google Sheets", "Google Drive", "Excel Automation", "Data Pipelines"],
         icon: <Layers className="w-5 h-5 text-purple-400" />,
         image: "/maulagi-proof.jpg"
@@ -162,7 +162,7 @@ export default function App() {
               className="max-w-3xl"
             >
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-accent/10 border border-brand-accent/20 text-brand-accent text-[10px] font-bold uppercase tracking-widest mb-6">
-                <Cpu className="w-3 h-3" /> Operations Systems Builder
+                <Cpu className="w-3 h-3" /> AI-Augmented Systems Architect
               </div>
               <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-[1.0] mb-8 text-gradient">
                 Turning operational chaos into $3,500+ monthly savings.
