@@ -1,6 +1,6 @@
 <div align="right">
 
-![unique visitors](https://visitor-badge.laobi.icu/badge?page_id=tamtam2492.tamtam2492&left_color=grey&right_color=0e75b6&left_text=unique%20visitors)
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=tamtam2492.tamtam2492&left_color=grey&right_color=0e75b6&left_text=visitors)
 
 </div>
 
