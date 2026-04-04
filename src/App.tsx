@@ -37,7 +37,7 @@ const clients = [
         roi: "Manual data entry dropped to zero. 95% AI/OCR accuracy achieved. 80% reduction in manual processing time — from hours to under 10 seconds per receipt. Handles 500+ transactions daily. Zero transcription errors across the entire collection team.",
         tools: ["n8n", "Telegram Bot API", "AI / OCR", "Google Sheets", "REST API"],
         icon: <Zap className="w-5 h-5 text-blue-400" />,
-        image: "/payment-automation-proof.jpg"
+        video: "/video_payment_receipt_automation.mp4"
       },
       {
         id: "field-monitoring",
@@ -436,12 +436,16 @@ export default function App() {
                         <div className="text-[10px] uppercase tracking-widest font-bold text-brand-accent mb-2">ROI & Impact</div>
                         <p className="text-sm font-medium leading-relaxed">{project.roi}</p>
                       </div>
-                      {project.image && (
+                      {('image' in project || 'video' in project) && (
                         <div className="md:col-span-3 mt-2">
                           <div className="text-[10px] uppercase tracking-widest font-bold text-brand-muted mb-3">Proof of Work</div>
-                          <a href={project.image} target="_blank" rel="noopener noreferrer" className="block">
-                            <img src={project.image} alt={`${project.title} proof`} className="w-full rounded-xl border border-brand-border hover:border-brand-accent/50 transition-all" />
-                          </a>
+                          {'video' in project && project.video ? (
+                            <video src={project.video} controls className="w-full rounded-xl border border-brand-border hover:border-brand-accent/50 transition-all" />
+                          ) : 'image' in project && project.image ? (
+                            <a href={project.image} target="_blank" rel="noopener noreferrer" className="block">
+                              <img src={project.image} alt={`${project.title} proof`} className="w-full rounded-xl border border-brand-border hover:border-brand-accent/50 transition-all" />
+                            </a>
+                          ) : null}
                         </div>
                       )}
                     </motion.div>
