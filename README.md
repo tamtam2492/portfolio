@@ -1,6 +1,6 @@
 <div align="right">
 
-![visitors](https://komarev.com/ghpvc/?username=tamtam2492&style=flat-square&color=0e75b6&label=visitors)
+![unique visitors](https://visitor-badge.laobi.icu/badge?page_id=tamtam2492.tamtam2492&left_color=grey&right_color=0e75b6&left_text=unique%20visitors)
 
 </div>
 
