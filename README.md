@@ -65,9 +65,7 @@ I'm not just a developer — I've managed **50+ field agents across 5 cities in 
 | **Payment Receipt Automation** | 500+ transactions/day · 95% accuracy · < 10 sec processing · zero manual entry |
 | **Field Team Monitoring** | 50+ agents · 5 cities · 42% faster task completion · 4–5 hrs/day freed per staff |
 
-<img src="https://tamtam2492.github.io/payment-automation-proof.jpg" alt="n8n Workflow + Telegram Receipt + Google Sheets" width="100%" />
-
-▶ [Watch Demo](https://tamtam2492.github.io/video_payment_receipt_automation.mp4)
+[![Watch Demo](https://tamtam2492.github.io/video_payment_receipt_automation_thumbnail.jpg)](https://tamtam2492.github.io/video_payment_receipt_automation.mp4)
 </details>
 
 <details>
