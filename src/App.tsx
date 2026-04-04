@@ -440,7 +440,7 @@ export default function App() {
                         <div className="md:col-span-3 mt-2">
                           <div className="text-[10px] uppercase tracking-widest font-bold text-brand-muted mb-3">Proof of Work</div>
                           {'video' in project && project.video ? (
-                            <video src={project.video} controls className="w-full rounded-xl border border-brand-border hover:border-brand-accent/50 transition-all" />
+                            <video src={project.video} controls autoPlay loop muted playsInline className="w-full rounded-xl border border-brand-border hover:border-brand-accent/50 transition-all" />
                           ) : 'image' in project && project.image ? (
                             <a href={project.image} target="_blank" rel="noopener noreferrer" className="block">
                               <img src={project.image} alt={`${project.title} proof`} className="w-full rounded-xl border border-brand-border hover:border-brand-accent/50 transition-all" />
