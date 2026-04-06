@@ -162,7 +162,7 @@ export default function App() {
               className="max-w-3xl"
             >
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-accent/10 border border-brand-accent/20 text-brand-accent text-[10px] font-bold uppercase tracking-widest mb-6">
-                <Cpu className="w-3 h-3" /> AI-Augmented Systems Architect
+                <Cpu className="w-3 h-3" /> Fullstack Developer | Automation Specialist | Workflow & AI Orchestration
               </div>
               <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-[1.0] mb-8 text-gradient">
                 Turning operational chaos into $3,500+ monthly savings.
