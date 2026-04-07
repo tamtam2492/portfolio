@@ -66,7 +66,7 @@ const clients = [
         roi: "Reduced monthly reconciliation cycle time by over 90% — from 14 days to 6 hours. 99% of duplicate entries eliminated. Handles Rp90M+ monthly transaction volume across 80+ branches. Full financial visibility — management sees branch-level accuracy daily without manual effort.",
         tools: ["Google Forms", "Google Sheets", "Google Drive", "Excel Automation", "Data Pipelines"],
         icon: <Layers className="w-5 h-5 text-purple-400" />,
-        image: "/maulagi-proof.jpg"
+        image: "/maulagi-proof.png"
       },
     ]
   },

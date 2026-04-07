@@ -78,7 +78,7 @@ I'm not just a developer — I've managed **50+ field agents across 5 cities in 
 |---|---|
 | **Expedition Reconciliation Engine** | 80+ branches · 2 areas · Rp90M+/month · 6 banks · 14 days → 6 hours · 99% duplicate eliminated |
 
-<img src="https://tamtam2492.github.io/maulagi-proof.jpg" alt="Google Forms Input + Excel Report Overview" width="100%" />
+<img src="https://tamtam2492.github.io/maulagi-proof.png" alt="Dashboard Transfer Maulagi — Live Recap" width="100%" />
 </details>
 
 <details>
