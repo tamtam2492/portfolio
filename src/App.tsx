@@ -60,13 +60,13 @@ const clients = [
     projects: [
       {
         id: "expedition-recon",
-        title: "Expedition Reconciliation Engine",
-        problem: "Manual reconciliation of shipping costs vs transfers across 80+ branches in 2 operational areas (Sulawesi Tenggara & Makassar Outer). Discrepancies went undetected for weeks — reconciliation alone took up to 14 days. Multi-bank payments (BRI, BCA, ShopeePay, GoPay, BNI, DANA) made tracking nearly impossible.",
-        solution: "End-to-end data pipeline: branch operators submit transfer proof via Google Forms → auto-stored in Google Drive + Google Sheets → fed into a 49-column Excel reconciliation engine that matches shipping costs against actual bank transfers across all branches and flags discrepancies instantly. Daily, monthly, and per-bank summaries generated automatically.",
-        roi: "Reduced monthly reconciliation cycle time by over 90% — from 14 days to 6 hours. 99% of duplicate entries eliminated. Handles Rp90M+ monthly transaction volume across 80+ branches. Full financial visibility — management sees branch-level accuracy daily without manual effort.",
-        tools: ["Google Forms", "Google Sheets", "Google Drive", "Excel Automation", "Data Pipelines"],
+        title: "Transfer Dashboard & Reconciliation System",
+        problem: "80+ branches across 2 operational areas (SE Sulawesi & Makassar Outer) had no way to submit or verify transfer proofs digitally. Discrepancies went undetected for weeks. Multi-bank payments (BRI, BCA, ShopeePay, GoPay, BNI, DANA) across branches made tracking nearly impossible — reconciliation alone took up to 14 days.",
+        solution: "Built a full-stack web application deployed on Vercel. Branch operators upload transfer proof photos via a web form — Groq AI/OCR auto-extracts bank name, amount, and date. Data is stored in Supabase (PostgreSQL) with deduplication checks. Admin dashboard provides real-time visibility per branch, per bank, and per period with export to XLSX. Secured with bcrypt auth, rate limiting, and OWASP-aligned HTTP security headers.",
+        roi: "Reconciliation cycle cut from 14 days to same-day. 99% duplicate entries eliminated. Rp90M+/month transaction volume tracked in real-time across 80+ branches. Management gets live branch-level accuracy without any manual effort.",
+        tools: ["Node.js", "Supabase", "Groq AI / OCR", "Vercel", "bcrypt", "REST API", "HTML/CSS/JS"],
         icon: <Layers className="w-5 h-5 text-purple-400" />,
-        image: "/maulagi-proof.png"
+        video: "/maulagi-demo.mp4"
       },
     ]
   },
@@ -133,8 +133,6 @@ export default function App() {
             <a href="#expertise" className="hover:text-white transition-colors">Expertise</a>
             <a href="#portfolio" className="hover:text-white transition-colors">Portfolio</a>
             <a href="#contact" className="hover:text-white transition-colors">Contact</a>
-            <a href="https://github.com/tamtam2492" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a>
-            <a href="https://www.linkedin.com/in/muhammadtharmizy" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
           </div>
           <a 
             href="#contact"
@@ -378,15 +376,28 @@ export default function App() {
       {/* Portfolio Section */}
       <section id="portfolio" className="py-24 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-20">
+          <div className="mb-14">
             <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-brand-accent mb-4">Project Portfolio</h2>
             <h3 className="text-4xl md:text-5xl font-bold tracking-tighter">Proven in production.</h3>
-              <p className="text-brand-muted mt-4 text-sm">4 clients. 5 systems. All running in the field.</p>
+            <p className="text-brand-muted mt-4 text-sm">4 clients. 5 systems. All running in the field.</p>
+          </div>
+
+          {/* Per-client quick nav */}
+          <div className="flex flex-wrap gap-2 mb-14">
+            {clients.map((client) => (
+              <a
+                key={client.id}
+                href={`#client-${client.id}`}
+                className={`px-4 py-2 rounded-lg border border-brand-border text-[11px] font-bold uppercase tracking-widest transition-all hover:border-brand-accent/60 hover:text-white text-brand-muted`}
+              >
+                {client.name}
+              </a>
+            ))}
           </div>
 
           <div className="space-y-20">
             {clients.map((client) => (
-              <div key={client.id}>
+              <div key={client.id} id={`client-${client.id}`}>
                 {/* Client Header */}
                 <div className={`flex items-center gap-4 mb-10 p-5 rounded-xl border ${client.borderColor} ${client.bgColor}`}>
                   <div className="flex-1">
@@ -525,7 +536,7 @@ export default function App() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-8">
+          <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-6">
             <a
               href="mailto:muhammad.tharmizy@gmail.com"
               className="flex flex-col items-center gap-3 p-8 glass rounded-2xl hover:bg-brand-accent hover:border-brand-accent transition-all group text-center"
@@ -567,7 +578,31 @@ export default function App() {
           </div>
 
           {/* Freelance Platforms */}
-          <div className="mb-10">
+          {/* Social & Freelance */}
+          <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto mb-8">
+            <a href="https://github.com/tamtam2492" target="_blank" rel="noopener noreferrer"
+              className="flex flex-col items-center gap-3 p-6 glass rounded-2xl hover:bg-brand-accent hover:border-brand-accent transition-all group text-center">
+              <div className="w-12 h-12 bg-brand-accent/10 rounded-xl flex items-center justify-center group-hover:bg-white/10 transition-colors">
+                <svg className="w-5 h-5 text-brand-accent group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </div>
+              <div>
+                <div className="text-[10px] uppercase tracking-widest font-bold text-brand-muted group-hover:text-white/70 mb-1">GitHub</div>
+                <div className="font-semibold text-sm group-hover:text-white">github.com/tamtam2492</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammadtharmizy" target="_blank" rel="noopener noreferrer"
+              className="flex flex-col items-center gap-3 p-6 glass rounded-2xl hover:bg-[#0A66C2] hover:border-[#0A66C2] transition-all group text-center">
+              <div className="w-12 h-12 bg-[#0A66C2]/10 rounded-xl flex items-center justify-center group-hover:bg-white/10 transition-colors">
+                <svg className="w-5 h-5 text-[#0A66C2] group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div>
+                <div className="text-[10px] uppercase tracking-widest font-bold text-brand-muted group-hover:text-white/70 mb-1">LinkedIn</div>
+                <div className="font-semibold text-sm group-hover:text-white">linkedin.com/in/muhammadtharmizy</div>
+              </div>
+            </a>
+          </div>
+
+          <div className="mb-8">
             <div className="text-center text-[10px] uppercase tracking-widest font-bold text-brand-muted mb-5">Also Available On</div>
             <div className="flex flex-wrap justify-center gap-3">
               <a href="https://www.fiverr.com/tamtam2492" target="_blank" rel="noopener noreferrer"
@@ -578,15 +613,10 @@ export default function App() {
                   <div className="text-xs font-semibold">fiverr.com/tamtam2492</div>
                 </div>
               </a>
-
             </div>
           </div>
 
           <div className="text-center">
-            <div className="flex justify-center gap-6 mb-4">
-              <a href="https://github.com/tamtam2492" target="_blank" rel="noopener noreferrer" className="text-brand-muted hover:text-white text-[11px] font-bold uppercase tracking-widest transition-colors">GitHub</a>
-              <a href="https://www.linkedin.com/in/muhammadtharmizy" target="_blank" rel="noopener noreferrer" className="text-brand-muted hover:text-white text-[11px] font-bold uppercase tracking-widest transition-colors">LinkedIn</a>
-            </div>
             <div className="text-brand-muted text-[10px] uppercase tracking-widest font-bold">
               Based in Makassar, Indonesia • Serving Global Enterprise Clients
             </div>
