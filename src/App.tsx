@@ -4,6 +4,7 @@
  */
 
 import { motion } from "motion/react";
+import { useState } from "react";
 import { 
   Zap, 
   Cpu, 
@@ -17,7 +18,8 @@ import {
   Layers,
   BarChart3,
   Smartphone,
-  Globe
+  Globe,
+  ChevronDown
 } from "lucide-react";
 
 const clients = [
@@ -120,6 +122,7 @@ const stats = [
 ];
 
 export default function App() {
+  const [portfolioOpen, setPortfolioOpen] = useState(false);
   return (
     <div className="min-h-screen bg-brand-bg text-brand-text selection:bg-brand-accent/30">
       {/* Navigation */}
@@ -131,7 +134,26 @@ export default function App() {
           </div>
           <div className="hidden md:flex gap-10 text-[11px] uppercase tracking-[0.2em] font-semibold text-brand-muted">
             <a href="#expertise" className="hover:text-white transition-colors">Expertise</a>
-            <a href="#portfolio" className="hover:text-white transition-colors">Portfolio</a>
+            {/* Portfolio dropdown */}
+            <div className="relative" onMouseEnter={() => setPortfolioOpen(true)} onMouseLeave={() => setPortfolioOpen(false)}>
+              <a href="#portfolio" className="flex items-center gap-1 hover:text-white transition-colors">
+                Portfolio <ChevronDown className={`w-3 h-3 transition-transform ${portfolioOpen ? 'rotate-180' : ''}`} />
+              </a>
+              {portfolioOpen && (
+                <div className="absolute top-full left-0 mt-2 w-52 glass border border-brand-border rounded-xl py-2 z-50 shadow-xl">
+                  {clients.map((client) => (
+                    <a
+                      key={client.id}
+                      href={`#client-${client.id}`}
+                      onClick={() => setPortfolioOpen(false)}
+                      className="block px-4 py-2.5 text-[10px] uppercase tracking-widest font-bold text-brand-muted hover:text-white hover:bg-brand-accent/10 transition-all"
+                    >
+                      {client.name}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
             <a href="#contact" className="hover:text-white transition-colors">Contact</a>
           </div>
           <a 
