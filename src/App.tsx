@@ -22,11 +22,13 @@ import {
   ChevronDown
 } from "lucide-react";
 
+type Lang = 'en' | 'id';
+
 const clients = [
   {
     id: "telkomsel",
     name: "Telkomsel",
-    division: "Collection Operations Division",
+    division: { en: "Collection Operations Division", id: "Divisi Operasional Koleksi" },
     color: "text-red-400",
     borderColor: "border-red-500/30",
     bgColor: "bg-red-500/5",
@@ -34,9 +36,9 @@ const clients = [
       {
         id: "telkomsel-automation",
         title: "Payment Receipt Automation",
-        problem: "Agents manually processed dozens of payment receipts daily via Telegram. High error rates and zero consistency.",
-        solution: "Built an end-to-end n8n workflow. AI/OCR extracts data from receipt photos, validates it, and syncs to Google Sheets with auto-confirmation messages.",
-        roi: "Manual data entry dropped to zero. 95% AI/OCR accuracy achieved. 80% reduction in manual processing time — from hours to under 10 seconds per receipt. Handles 500+ transactions daily. Zero transcription errors across the entire collection team.",
+        problem: { en: "Agents manually processed dozens of payment receipts daily via Telegram. High error rates and zero consistency.", id: "Agen memproses puluhan bukti pembayaran secara manual setiap hari via Telegram. Tingkat kesalahan tinggi dan nol konsistensi." },
+        solution: { en: "Built an end-to-end n8n workflow. AI/OCR extracts data from receipt photos, validates it, and syncs to Google Sheets with auto-confirmation messages.", id: "Membangun workflow n8n end-to-end. AI/OCR mengekstrak data dari foto bukti pembayaran, memvalidasinya, dan menyinkronkan ke Google Sheets dengan pesan konfirmasi otomatis." },
+        roi: { en: "Manual data entry dropped to zero. 95% AI/OCR accuracy achieved. 80% reduction in manual processing time — from hours to under 10 seconds per receipt. Handles 500+ transactions daily. Zero transcription errors across the entire collection team.", id: "Input data manual turun ke nol. Akurasi AI/OCR 95% tercapai. Pengurangan 80% waktu pemrosesan — dari berjam-jam menjadi di bawah 10 detik per bukti. Menangani 500+ transaksi harian. Nol kesalahan transkripsi di seluruh tim koleksi." },
         tools: ["n8n", "Telegram Bot API", "AI / OCR", "Google Sheets", "REST API"],
         icon: <Zap className="w-5 h-5 text-blue-400" />,
         video: "/video_payment_receipt_automation.mp4"
@@ -44,9 +46,9 @@ const clients = [
       {
         id: "field-monitoring",
         title: "Field Team Monitoring System",
-        problem: "No unified system for 50+ agents across 5 cities — Makassar, Manado, Palu, Kendari, and Gorontalo. Management spent days just consolidating data.",
-        solution: "Custom Excel-based operational backbone aggregating ACH Target, Recovery Rate, and Gap Analysis automatically across all cities. Automated reporting replaced manual daily compilation.",
-        roi: "Shifted leadership focus from data collection to decision-making. 42% improvement in task completion time. Reduced coordination overhead by 8 hours per day for management.",
+        problem: { en: "No unified system for 50+ agents across 5 cities — Makassar, Manado, Palu, Kendari, and Gorontalo. Management spent days just consolidating data.", id: "Tidak ada sistem terpadu untuk 50+ agen di 5 kota — Makassar, Manado, Palu, Kendari, dan Gorontalo. Manajemen menghabiskan berhari-hari hanya untuk mengkonsolidasi data." },
+        solution: { en: "Custom Excel-based operational backbone aggregating ACH Target, Recovery Rate, and Gap Analysis automatically across all cities. Automated reporting replaced manual daily compilation.", id: "Backbone operasional berbasis Excel kustom yang mengagregasi Target ACH, Recovery Rate, dan Gap Analysis secara otomatis di semua kota. Pelaporan otomatis menggantikan kompilasi manual harian." },
+        roi: { en: "Shifted leadership focus from data collection to decision-making. 42% improvement in task completion time. Reduced coordination overhead by 8 hours per day for management.", id: "Mengalihkan fokus kepemimpinan dari pengumpulan data ke pengambilan keputusan. Peningkatan 42% waktu penyelesaian tugas. Mengurangi overhead koordinasi 8 jam per hari untuk manajemen." },
         tools: ["Advanced Excel", "SUMIFS", "XLOOKUP", "Data Architecture"],
         icon: <BarChart3 className="w-5 h-5 text-green-400" />
       },
@@ -55,7 +57,7 @@ const clients = [
   {
     id: "maulagi",
     name: "PT Maulagi Indo Solusi",
-    division: "Logistics & Expedition Operations",
+    division: { en: "Logistics & Expedition Operations", id: "Operasional Logistik & Ekspedisi" },
     color: "text-purple-400",
     borderColor: "border-purple-500/30",
     bgColor: "bg-purple-500/5",
@@ -63,9 +65,9 @@ const clients = [
       {
         id: "expedition-recon",
         title: "Transfer Dashboard & Reconciliation System",
-        problem: "80+ branches across 2 operational areas (SE Sulawesi & Makassar Outer) had no way to submit or verify transfer proofs digitally. Discrepancies went undetected for weeks. Multi-bank payments (BRI, BCA, ShopeePay, GoPay, BNI, DANA) across branches made tracking nearly impossible — reconciliation alone took up to 14 days.",
-        solution: "Built a full-stack web application deployed on Vercel. Branch operators upload transfer proof photos via a web form — Groq AI/OCR auto-extracts bank name, amount, and date. Data is stored in Supabase (PostgreSQL) with deduplication checks. Admin dashboard provides real-time visibility per branch, per bank, and per period with export to XLSX. Secured with bcrypt auth, rate limiting, and OWASP-aligned HTTP security headers.",
-        roi: "Reconciliation cycle cut from 14 days to same-day. 99% duplicate entries eliminated. Rp90M+/month transaction volume tracked in real-time across 80+ branches. Management gets live branch-level accuracy without any manual effort.",
+        problem: { en: "80+ branches across 2 operational areas (SE Sulawesi & Makassar Outer) had no way to submit or verify transfer proofs digitally. Discrepancies went undetected for weeks. Multi-bank payments (BRI, BCA, ShopeePay, GoPay, BNI, DANA) across branches made tracking nearly impossible — reconciliation alone took up to 14 days.", id: "80+ cabang di 2 area operasional (Sulsel Tenggara & Makassar Luar) tidak memiliki cara mengirim atau memverifikasi bukti transfer secara digital. Selisih tidak terdeteksi berminggu-minggu. Pembayaran multi-bank (BRI, BCA, ShopeePay, GoPay, BNI, DANA) lintas cabang membuat rekonsiliasi hampir mustahil — butuh hingga 14 hari." },
+        solution: { en: "Built a full-stack web application deployed on Vercel. Branch operators upload transfer proof photos via a web form — Groq AI/OCR auto-extracts bank name, amount, and date. Data is stored in Supabase (PostgreSQL) with deduplication checks. Admin dashboard provides real-time visibility per branch, per bank, and per period with export to XLSX. Secured with bcrypt auth, rate limiting, and OWASP-aligned HTTP security headers.", id: "Membangun aplikasi web full-stack yang di-deploy di Vercel. Operator cabang unggah foto bukti transfer via form web — Groq AI/OCR otomatis ekstrak nama bank, nominal, dan tanggal. Data disimpan di Supabase (PostgreSQL) dengan pemeriksaan duplikasi. Dashboard admin menyediakan visibilitas real-time per cabang, per bank, dan per periode dengan ekspor XLSX. Diamankan dengan bcrypt, rate limiting, dan HTTP security headers sesuai OWASP." },
+        roi: { en: "Reconciliation cycle cut from 14 days to same-day. 99% duplicate entries eliminated. Rp90M+/month transaction volume tracked in real-time across 80+ branches. Management gets live branch-level accuracy without any manual effort.", id: "Siklus rekonsiliasi dipotong dari 14 hari menjadi hari yang sama. 99% entri duplikat dieliminasi. Volume transaksi Rp90 juta+/bulan dilacak real-time di 80+ cabang. Manajemen mendapatkan akurasi tingkat cabang secara live tanpa upaya manual." },
         tools: ["Node.js", "Supabase", "Groq AI / OCR", "Vercel", "bcrypt", "REST API", "HTML/CSS/JS"],
         icon: <Layers className="w-5 h-5 text-purple-400" />,
         video: "/maulagi-demo.mp4"
@@ -75,7 +77,7 @@ const clients = [
   {
     id: "nie-buket",
     name: "Nie Buket",
-    division: "Premium Bouquet & Gift Shop",
+    division: { en: "Premium Bouquet & Gift Shop", id: "Toko Buket & Hadiah Premium" },
     color: "text-pink-400",
     borderColor: "border-pink-500/30",
     bgColor: "bg-pink-500/5",
@@ -83,9 +85,9 @@ const clients = [
       {
         id: "nie-buket-pos",
         title: "POS & Inventory Management System",
-        problem: "No digital system for managing sales, stock, and receipts. Transactions done manually with zero record keeping or reporting.",
-        solution: "Built a full-stack Progressive Web App with Express.js + MongoDB Atlas backend. Features include product & stock management, transaction history, thermal receipt printing via Bluetooth, and real-time low-stock alerts.",
-        roi: "Fully digitized operations. Every sale is recorded, stock is tracked automatically, and receipts print instantly. Deployed live on Vercel.",
+        problem: { en: "No digital system for managing sales, stock, and receipts. Transactions done manually with zero record keeping or reporting.", id: "Tidak ada sistem digital untuk mengelola penjualan, stok, dan struk. Transaksi dilakukan manual tanpa pencatatan atau pelaporan." },
+        solution: { en: "Built a full-stack Progressive Web App with Express.js + MongoDB Atlas backend. Features include product & stock management, transaction history, thermal receipt printing via Bluetooth, and real-time low-stock alerts.", id: "Membangun Progressive Web App full-stack dengan backend Express.js + MongoDB Atlas. Fitur: manajemen produk & stok, riwayat transaksi, cetak struk thermal via Bluetooth, dan peringatan stok rendah real-time." },
+        roi: { en: "Fully digitized operations. Every sale is recorded, stock is tracked automatically, and receipts print instantly. Deployed live on Vercel.", id: "Operasional sepenuhnya terdigitalisasi. Setiap penjualan tercatat, stok dilacak otomatis, dan struk tercetak seketika. Di-deploy di Vercel." },
         tools: ["Node.js", "Express.js", "MongoDB Atlas", "React", "PWA", "Vercel", "Bluetooth Printer"],
         icon: <Database className="w-5 h-5 text-pink-400" />,
         image: "/niebuket-proof.jpg"
@@ -95,7 +97,7 @@ const clients = [
   {
     id: "quality-laundry",
     name: "Quality Laundry",
-    division: "Android Operations App — v1.4.11 Production",
+    division: { en: "Android Operations App — v1.4.11 Production", id: "Aplikasi Android Operasional — v1.4.11 Produksi" },
     color: "text-orange-400",
     borderColor: "border-orange-500/30",
     bgColor: "bg-orange-500/5",
@@ -103,9 +105,9 @@ const clients = [
       {
         id: "quality-laundry-app",
         title: "Quality Laundry Ecosystem",
-        problem: "UMKM laundry dengan pickup/delivery tanpa sistem digital. Status pesanan tidak transparan, koordinasi kurir manual via chat, dan nol pelaporan otomatis.",
-        solution: "Full-stack Android app (v1.4.11) menghubungkan 3 role — Customer, Kurir, Admin — dengan alur operasional end-to-end: buat pesanan → pickup → proses → delivery → selesai. Fitur: chat real-time, GPS tracking kurir, push notification (FCM), 18 API endpoint, laporan harian/mingguan/bulanan dengan export XLSX, JWT auth, dan security hardening.",
-        roi: "Operasional laundry sepenuhnya terdigitalisasi. Status pesanan real-time untuk semua pihak. Laporan otomatis menggantikan pencatatan manual. APK production dirilis dan aktif digunakan.",
+        problem: { en: "UMKM laundry with pickup/delivery but no digital system. Order status was opaque, courier coordination was manual via chat, and zero automated reporting.", id: "UMKM laundry dengan pickup/delivery tanpa sistem digital. Status pesanan tidak transparan, koordinasi kurir manual via chat, dan nol pelaporan otomatis." },
+        solution: { en: "Full-stack Android app (v1.4.11) connecting 3 roles — Customer, Courier, Admin — with an end-to-end operational flow: create order → pickup → process → delivery → complete. Features: real-time chat, GPS courier tracking, push notifications (FCM), 18 API endpoints, daily/weekly/monthly reports with XLSX export, JWT auth, and security hardening.", id: "Full-stack Android app (v1.4.11) menghubungkan 3 role — Customer, Kurir, Admin — dengan alur operasional end-to-end: buat pesanan → pickup → proses → delivery → selesai. Fitur: chat real-time, GPS tracking kurir, push notification (FCM), 18 API endpoint, laporan harian/mingguan/bulanan dengan export XLSX, JWT auth, dan security hardening." },
+        roi: { en: "Laundry operations fully digitized. Real-time order status for all parties. Automated reports replace manual record-keeping. Production APK released and actively used.", id: "Operasional laundry sepenuhnya terdigitalisasi. Status pesanan real-time untuk semua pihak. Laporan otomatis menggantikan pencatatan manual. APK production dirilis dan aktif digunakan." },
         tools: ["Kotlin", "Jetpack Compose", "Firebase Realtime DB", "FCM", "Express.js", "MongoDB Atlas", "JWT", "Google Maps", "ExcelJS", "Vercel"],
         icon: <Smartphone className="w-5 h-5 text-orange-400" />,
         image: "/quality-laundry-proof.png"
@@ -114,15 +116,193 @@ const clients = [
   }
 ];
 
-const stats = [
-  { label: "Manual Work Eliminated", value: "100%" },
-  { label: "AI/OCR Accuracy", value: "95%+" },
-  { label: "Agents Managed", value: "50+" },
-  { label: "Monthly Savings Delivered", value: "$3.5k+" }
-];
+const translations = {
+  en: {
+    nav: { expertise: "Expertise", portfolio: "Portfolio", contact: "Contact", hire: "Hire Architect" },
+    hero: {
+      badge: "Fullstack Developer | Automation Specialist | Workflow & AI Orchestration",
+      h1: "Filling the gap between operations and automation.",
+      p1_pre: "I don't just write code — I ",
+      p1_highlight: "orchestrate intelligent systems",
+      p1_post: ". By leveraging AI workflows, I deliver production-grade solutions (Android, PWA, Automations) with the speed and scale of an entire team.",
+      p2_pre: "Proven field operations leadership — led, monitored, and coordinated ",
+      p2_highlight: "50+ agents across 5 cities in Sulawesi",
+      p2_post: " (Makassar, Manado, Palu, Kendari, Gorontalo), including recruitment, performance evaluation, and resolving field issues. I know what breaks on the ground, and I build automation that survives it.",
+      quote: '"As long as there is data that needs to be tracked, I can automate it. Because I have proven it in the field."',
+      cta_hire: "Hire Me Now",
+      cta_fiverr: "View on Fiverr",
+      available: "Available for Q2 2026 Projects",
+      badge_img: "4 Clients • 5 Systems",
+    },
+    stats: [
+      { label: "Manual Work Eliminated", value: "100%" },
+      { label: "AI/OCR Accuracy", value: "95%+" },
+      { label: "Agents Managed", value: "50+" },
+      { label: "Monthly Savings Delivered", value: "$3.5k+" },
+    ],
+    expertise: {
+      label: "Core Knowledge Base",
+      title: "Architecting the infrastructure of high-growth operations.",
+      desc: "I don't just build systems. I understand what breaks in the field, what people actually need, and how to design automation that survives real-world conditions.",
+      cards: [
+        { title: "Workflow Automation", desc: 'Specializing in n8n, Telegram Bot API, and WhatsApp automation. I eliminate manual friction by connecting disparate data sources into a single "Final Brain" logic.' },
+        { title: "Operations Architecture", desc: "Designing real-time reconciliation engines and performance monitoring dashboards. I turn fragmented data into operational visibility for teams of 50+." },
+        { title: "Full-Stack Ecosystems", desc: "Building custom Android operations apps using Kotlin and Jetpack Compose. Seamlessly integrated with Firebase and Node.js backends for field-to-office sync." },
+      ],
+    },
+    process: {
+      label: "How I Work",
+      title: "From chaos to clarity",
+      subtitle: " — four steps.",
+      steps: [
+        { step: "01", title: "Diagnose", desc: "I map every friction point, manual step, and data gap before a single line is written. Nothing gets missed." },
+        { step: "02", title: "Architect", desc: "Design logic that handles real-world edge cases — not just happy paths. Tools are chosen last, never first." },
+        { step: "03", title: "Build & Test", desc: "Iterative builds with live testing at each stage. Breaking before production means fixing before deployment." },
+        { step: "04", title: "Deploy & Hand Off", desc: "Full documentation, training, and async support. Systems I build stay running long after I leave." },
+      ],
+    },
+    tools: {
+      label: "Technology Stack",
+      title: "Tools that survive the field.",
+      desc: "Every tool chosen has a reason. No over-engineering. No hype-driven choices. Only what builds reliable, maintainable systems.",
+    },
+    portfolio: {
+      label: "Project Portfolio",
+      title: "Proven in production.",
+      desc: "4 clients. 5 systems. All running in the field.",
+      client_label: "Client",
+      systems_label: "Systems Built",
+      friction: "The Friction",
+      engine: "The Engine",
+      roi: "ROI & Impact",
+      proof: "Proof of Work",
+    },
+    whyme: {
+      badge: "The Architect Advantage",
+      title1: "Why an Architect,",
+      title2: "not a freelancer?",
+      p: "Most automation engineers have never managed a team. Most operations managers cannot build automation. I do both — and that combination is rare.",
+      checks: [
+        { title: "I understand the problem from inside", desc: "I have worked in operations. I know what breaks in the field. The systems I build solve real problems, not theoretical ones." },
+        { title: "Everything proven in production", desc: "All systems in this portfolio ran in real operations. Not demo environments, not practice projects. Real data, real teams, real scale." },
+        { title: "No hand-holding required", desc: "I scope, design, build, and deliver. You brief me once. I translate it into a system that outlasts the engagement." },
+      ],
+      cards: [
+        { title: "Cross-industry adaptability", desc: "Telecoms, logistics, and now app development. The same principles apply. The same approach works. I adapt quickly." },
+        { title: "Results over complexity", desc: "The goal is never an impressive-looking system. The goal is giving time back to the team. Simple, reliable, and actually used." },
+        { title: "Async-first communication", desc: "I work across time zones. Documentation is thorough. Handoffs are clean. You are never left waiting for status updates." },
+      ],
+    },
+    contact: {
+      label: "Let's Work Smart, Not Harder",
+      title1: "Have a system",
+      title2: "in mind? Let's talk.",
+      desc: "Whether it's automation, a full-stack app, or untangling messy operations — reach out and let's figure out what makes sense for your case.",
+      also_on: "Also Available On",
+      based: "Based in Makassar, Indonesia • Serving Global Enterprise Clients",
+    },
+    footer: {
+      tagline: "Operations Systems Architect • Built with React & Tailwind",
+      n8n: "n8n Expert",
+      ops: "Ops Architect",
+    },
+  },
+  id: {
+    nav: { expertise: "Keahlian", portfolio: "Portofolio", contact: "Kontak", hire: "Hubungi Saya" },
+    hero: {
+      badge: "Fullstack Developer | Spesialis Otomasi | Workflow & AI Orchestration",
+      h1: "Mengisi celah antara operasional dan otomasi.",
+      p1_pre: "Saya tidak sekadar menulis kode — saya ",
+      p1_highlight: "mengorkestrasi sistem cerdas",
+      p1_post: ". Dengan memanfaatkan workflow AI, saya menghasilkan solusi production-grade (Android, PWA, Otomasi) dengan kecepatan dan skala satu tim penuh.",
+      p2_pre: "Terbukti dalam kepemimpinan operasional lapangan — memimpin, memonitor, dan mengoordinasikan ",
+      p2_highlight: "50+ agen di 5 kota di Sulawesi",
+      p2_post: " (Makassar, Manado, Palu, Kendari, Gorontalo), termasuk rekrutmen, evaluasi kinerja, dan penyelesaian masalah lapangan. Saya tahu apa yang rusak di lapangan, dan saya membangun otomasi yang tahan uji.",
+      quote: '"Selama ada data yang perlu dilacak, saya bisa mengotomatisasinya. Karena saya sudah membuktikannya di lapangan."',
+      cta_hire: "Hubungi Sekarang",
+      cta_fiverr: "Lihat di Fiverr",
+      available: "Tersedia untuk Proyek Q2 2026",
+      badge_img: "4 Klien • 5 Sistem",
+    },
+    stats: [
+      { label: "Pekerjaan Manual Dieliminasi", value: "100%" },
+      { label: "Akurasi AI/OCR", value: "95%+" },
+      { label: "Agen Dikelola", value: "50+" },
+      { label: "Penghematan Bulanan", value: "$3.5k+" },
+    ],
+    expertise: {
+      label: "Basis Pengetahuan Inti",
+      title: "Merancang infrastruktur operasional yang efisien.",
+      desc: "Saya tidak sekadar membangun sistem. Saya memahami apa yang gagal di lapangan, apa yang benar-benar dibutuhkan, dan cara merancang otomasi yang bertahan di kondisi nyata.",
+      cards: [
+        { title: "Otomasi Workflow", desc: "Spesialis n8n, Telegram Bot API, dan WhatsApp automation. Saya menghilangkan hambatan manual dengan menghubungkan berbagai sumber data ke dalam satu logika terpadu." },
+        { title: "Arsitektur Operasional", desc: "Merancang engine rekonsiliasi real-time dan dashboard monitoring kinerja. Saya mengubah data tersebar menjadi visibilitas operasional untuk tim 50+ orang." },
+        { title: "Full-Stack Ecosystem", desc: "Membangun aplikasi Android operasional dengan Kotlin dan Jetpack Compose. Terintegrasi seamless dengan backend Firebase dan Node.js untuk sinkronisasi lapangan ke kantor." },
+      ],
+    },
+    process: {
+      label: "Cara Kerja Saya",
+      title: "Dari kekacauan ke kejelasan",
+      subtitle: " — empat langkah.",
+      steps: [
+        { step: "01", title: "Diagnosa", desc: "Saya memetakan setiap titik gesekan, langkah manual, dan kesenjangan data sebelum satu baris kode pun ditulis. Tidak ada yang terlewat." },
+        { step: "02", title: "Arsitektur", desc: "Merancang logika yang menangani kasus tepi dunia nyata — bukan hanya jalur bahagia. Tools dipilih terakhir, bukan pertama." },
+        { step: "03", title: "Bangun & Uji", desc: "Build iteratif dengan pengujian langsung di setiap tahap. Rusak sebelum produksi berarti perbaiki sebelum deployment." },
+        { step: "04", title: "Deploy & Serah Terima", desc: "Dokumentasi lengkap, pelatihan, dan dukungan async. Sistem yang saya bangun tetap berjalan lama setelah saya pergi." },
+      ],
+    },
+    tools: {
+      label: "Technology Stack",
+      title: "Tools yang tahan di lapangan.",
+      desc: "Setiap tool dipilih dengan alasan. Tidak ada over-engineering. Tidak ada pilihan berdasarkan hype. Hanya yang membangun sistem andal dan mudah dipelihara.",
+    },
+    portfolio: {
+      label: "Portofolio Proyek",
+      title: "Terbukti di produksi.",
+      desc: "4 klien. 5 sistem. Semua berjalan di lapangan.",
+      client_label: "Klien",
+      systems_label: "Sistem Dibangun",
+      friction: "Permasalahan",
+      engine: "Solusi",
+      roi: "ROI & Dampak",
+      proof: "Bukti Kerja",
+    },
+    whyme: {
+      badge: "Keunggulan Arsitek",
+      title1: "Mengapa Arsitek,",
+      title2: "bukan freelancer biasa?",
+      p: "Kebanyakan engineer otomasi belum pernah memimpin tim. Kebanyakan manajer operasional tidak bisa membangun otomasi. Saya melakukan keduanya — dan kombinasi itu langka.",
+      checks: [
+        { title: "Saya memahami masalah dari dalam", desc: "Saya pernah bekerja di operasional. Saya tahu apa yang rusak di lapangan. Sistem yang saya bangun memecahkan masalah nyata, bukan teoritis." },
+        { title: "Semua terbukti di produksi", desc: "Semua sistem dalam portofolio ini berjalan di operasional nyata. Bukan lingkungan demo, bukan proyek latihan. Data nyata, tim nyata, skala nyata." },
+        { title: "Tidak perlu banyak arahan", desc: "Saya scope, desain, bangun, dan deliver. Anda brief saya sekali. Saya terjemahkan menjadi sistem yang bertahan melampaui engagement." },
+      ],
+      cards: [
+        { title: "Adaptabilitas lintas industri", desc: "Telekomunikasi, logistik, dan kini pengembangan aplikasi. Prinsip yang sama berlaku. Pendekatan yang sama berhasil. Saya beradaptasi dengan cepat." },
+        { title: "Hasil di atas kompleksitas", desc: "Tujuannya bukan sistem yang terlihat canggih. Tujuannya adalah mengembalikan waktu ke tim. Sederhana, andal, dan benar-benar digunakan." },
+        { title: "Komunikasi async-first", desc: "Saya bekerja lintas zona waktu. Dokumentasi menyeluruh. Handoff bersih. Anda tidak pernah menunggu update status." },
+      ],
+    },
+    contact: {
+      label: "Mari Bekerja Cerdas",
+      title1: "Punya sistem",
+      title2: "dalam pikiran? Mari ngobrol.",
+      desc: "Baik itu otomasi, full-stack app, atau mengurai operasional yang rumit — hubungi saya dan mari kita cari tahu apa yang masuk akal untuk kasus Anda.",
+      also_on: "Juga Tersedia Di",
+      based: "Berbasis di Makassar, Indonesia • Melayani Klien Global",
+    },
+    footer: {
+      tagline: "Arsitek Sistem Operasional • Dibangun dengan React & Tailwind",
+      n8n: "Ahli n8n",
+      ops: "Arsitek Ops",
+    },
+  },
+} as const;
 
 export default function App() {
   const [portfolioOpen, setPortfolioOpen] = useState(false);
+  const [lang, setLang] = useState<Lang>('en');
+  const t = translations[lang];
   return (
     <div className="min-h-screen bg-brand-bg text-brand-text selection:bg-brand-accent/30">
       {/* Navigation */}
@@ -133,11 +313,11 @@ export default function App() {
             <span className="font-mono text-sm tracking-tighter uppercase font-bold">Muhammad Tharmizy Tahir, ST</span>
           </div>
           <div className="hidden md:flex gap-10 text-[11px] uppercase tracking-[0.2em] font-semibold text-brand-muted">
-            <a href="#expertise" className="hover:text-white transition-colors">Expertise</a>
+            <a href="#expertise" className="hover:text-white transition-colors">{t.nav.expertise}</a>
             {/* Portfolio dropdown */}
             <div className="relative" onMouseEnter={() => setPortfolioOpen(true)} onMouseLeave={() => setPortfolioOpen(false)}>
               <a href="#portfolio" className="flex items-center gap-1 hover:text-white transition-colors">
-                Portfolio <ChevronDown className={`w-3 h-3 transition-transform ${portfolioOpen ? 'rotate-180' : ''}`} />
+                {t.nav.portfolio} <ChevronDown className={`w-3 h-3 transition-transform ${portfolioOpen ? 'rotate-180' : ''}`} />
               </a>
               {portfolioOpen && (
                 <div className="absolute top-full left-0 mt-2 w-52 glass border border-brand-border rounded-xl py-2 z-50 shadow-xl">
@@ -154,14 +334,24 @@ export default function App() {
                 </div>
               )}
             </div>
-            <a href="#contact" className="hover:text-white transition-colors">Contact</a>
+            <a href="#contact" className="hover:text-white transition-colors">{t.nav.contact}</a>
           </div>
-          <a 
-            href="#contact"
-            className="bg-white text-black px-5 py-2.5 rounded text-[11px] font-bold uppercase tracking-widest hover:bg-brand-accent hover:text-white transition-all"
-          >
-            Hire Architect
-          </a>
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => setLang(lang === 'en' ? 'id' : 'en')}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded border border-brand-border text-[11px] font-bold uppercase tracking-widest text-brand-muted hover:text-white hover:border-brand-accent/50 transition-all"
+              aria-label="Toggle language"
+            >
+              <Globe className="w-3 h-3" />
+              {lang === 'en' ? 'ID' : 'EN'}
+            </button>
+            <a 
+              href="#contact"
+              className="bg-white text-black px-5 py-2.5 rounded text-[11px] font-bold uppercase tracking-widest hover:bg-brand-accent hover:text-white transition-all"
+            >
+              {t.nav.hire}
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -182,19 +372,19 @@ export default function App() {
               className="max-w-3xl"
             >
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-accent/10 border border-brand-accent/20 text-brand-accent text-[10px] font-bold uppercase tracking-widest mb-6">
-                <Cpu className="w-3 h-3" /> Fullstack Developer | Automation Specialist | Workflow & AI Orchestration
+                <Cpu className="w-3 h-3" /> {t.hero.badge}
               </div>
               <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-[1.1] pb-1 mb-8 text-gradient">
-                Filling the gap between operations and automation.
+                {t.hero.h1}
               </h1>
               <p className="text-lg md:text-xl text-brand-muted mb-6 leading-relaxed max-w-2xl">
-                I don't just write code — I <span className="text-white font-medium">orchestrate intelligent systems</span>. By leveraging AI workflows, I deliver production-grade solutions (Android, PWA, Automations) with the speed and scale of an entire team.
+                {t.hero.p1_pre}<span className="text-white font-medium">{t.hero.p1_highlight}</span>{t.hero.p1_post}
               </p>
               <p className="text-sm text-brand-muted mb-6 leading-relaxed max-w-2xl">
-                Proven field operations leadership — led, monitored, and coordinated <span className="text-white font-semibold">50+ agents across 5 cities in Sulawesi</span> (Makassar, Manado, Palu, Kendari, Gorontalo), including recruitment, performance evaluation, and resolving field issues. I know what breaks on the ground, and I build automation that survives it.
+                {t.hero.p2_pre}<span className="text-white font-semibold">{t.hero.p2_highlight}</span>{t.hero.p2_post}
               </p>
               <blockquote className="border-l-2 border-brand-accent pl-5 py-1 mb-10 max-w-2xl">
-                <p className="text-sm italic text-brand-muted leading-relaxed">"As long as there is data that needs to be tracked, I can automate it. Because I have proven it in the field."</p>
+                <p className="text-sm italic text-brand-muted leading-relaxed">{t.hero.quote}</p>
               </blockquote>
               <div className="flex flex-wrap gap-4">
                 <a
@@ -203,7 +393,7 @@ export default function App() {
                   rel="noopener noreferrer"
                   className="bg-brand-accent text-white px-8 py-4 rounded font-bold flex items-center gap-2 hover:scale-105 transition-transform"
                 >
-                  Hire Me Now <ArrowRight className="w-4 h-4" />
+                  {t.hero.cta_hire} <ArrowRight className="w-4 h-4" />
                 </a>
                 <a
                   href="https://www.fiverr.com/tamtam2492"
@@ -211,11 +401,11 @@ export default function App() {
                   rel="noopener noreferrer"
                   className="border border-[#1DBF73] text-[#1DBF73] px-8 py-4 rounded font-bold flex items-center gap-2 hover:bg-[#1DBF73] hover:text-white transition-all"
                 >
-                  View on Fiverr <Globe className="w-4 h-4" />
+                  {t.hero.cta_fiverr} <Globe className="w-4 h-4" />
                 </a>
                 <div className="flex items-center gap-4 px-6 py-4 rounded border border-brand-border font-mono text-xs text-brand-muted">
                   <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                  Available for Q2 2026 Projects
+                  {t.hero.available}
                 </div>
               </div>
             </motion.div>
@@ -234,7 +424,7 @@ export default function App() {
                   className="relative w-48 h-48 md:w-64 md:h-64 rounded-2xl object-cover object-top border border-brand-border"
                 />
                 <div className="absolute -bottom-3 -right-3 px-3 py-1.5 bg-brand-card border border-brand-border rounded-lg text-[10px] font-mono font-bold text-brand-accent uppercase tracking-widest">
-                  4 Clients • 5 Systems
+                  {t.hero.badge_img}
                 </div>
               </div>
             </motion.div>
@@ -246,7 +436,7 @@ export default function App() {
             transition={{ delay: 0.4, duration: 1 }}
             className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-28 border-t border-brand-border/60 pt-14"
           >
-            {stats.map((stat, i) => (
+            {t.stats.map((stat, i) => (
               <div key={i} className="group">
                 <div className="text-4xl md:text-6xl font-black mb-2 font-mono tracking-tighter group-hover:text-brand-accent transition-colors">{stat.value}</div>
                 <div className="text-[10px] uppercase tracking-[0.2em] text-brand-muted font-bold">{stat.label}</div>
@@ -261,59 +451,41 @@ export default function App() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
             <div className="max-w-xl">
-              <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-brand-accent mb-4">Core Knowledge Base</h2>
-              <h3 className="text-3xl md:text-4xl font-bold tracking-tight">Architecting the infrastructure of high-growth operations.</h3>
+              <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-brand-accent mb-4">{t.expertise.label}</h2>
+              <h3 className="text-3xl md:text-4xl font-bold tracking-tight">{t.expertise.title}</h3>
             </div>
             <p className="text-brand-muted max-w-sm text-sm">
-              I don't just build systems. I understand what breaks in the field, what people actually need, and how to design automation that survives real-world conditions.
+              {t.expertise.desc}
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="p-8 rounded-xl glass hover:border-brand-accent/50 transition-all group">
-              <div className="w-12 h-12 bg-brand-accent/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent/20 transition-colors">
-                <Zap className="w-6 h-6 text-brand-accent" />
-              </div>
-              <h4 className="text-xl font-bold mb-4 tracking-tight">Workflow Automation</h4>
-              <p className="text-sm text-brand-muted leading-relaxed mb-6">
-                Specializing in n8n, Telegram Bot API, and WhatsApp automation. I eliminate manual friction by connecting disparate data sources into a single "Final Brain" logic.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {["n8n", "Webhooks", "API Integration"].map(tag => (
-                  <span key={tag} className="px-2 py-1 bg-white/5 rounded text-[10px] font-mono text-brand-muted">{tag}</span>
-                ))}
-              </div>
-            </div>
-
-            <div className="p-8 rounded-xl glass hover:border-brand-accent/50 transition-all group">
-              <div className="w-12 h-12 bg-brand-accent/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent/20 transition-colors">
-                <Database className="w-6 h-6 text-brand-accent" />
-              </div>
-              <h4 className="text-xl font-bold mb-4 tracking-tight">Operations Architecture</h4>
-              <p className="text-sm text-brand-muted leading-relaxed mb-6">
-                Designing real-time reconciliation engines and performance monitoring dashboards. I turn fragmented data into operational visibility for teams of 50+.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {["Excel Advanced", "Power BI", "Data Pipelines"].map(tag => (
-                  <span key={tag} className="px-2 py-1 bg-white/5 rounded text-[10px] font-mono text-brand-muted">{tag}</span>
-                ))}
-              </div>
-            </div>
-
-            <div className="p-8 rounded-xl glass hover:border-brand-accent/50 transition-all group">
-              <div className="w-12 h-12 bg-brand-accent/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent/20 transition-colors">
-                <Layout className="w-6 h-6 text-brand-accent" />
-              </div>
-              <h4 className="text-xl font-bold mb-4 tracking-tight">Full-Stack Ecosystems</h4>
-              <p className="text-sm text-brand-muted leading-relaxed mb-6">
-                Building custom Android operations apps using Kotlin and Jetpack Compose. Seamlessly integrated with Firebase and Node.js backends for field-to-office sync.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {["Kotlin", "Firebase", "REST API"].map(tag => (
-                  <span key={tag} className="px-2 py-1 bg-white/5 rounded text-[10px] font-mono text-brand-muted">{tag}</span>
-                ))}
-              </div>
-            </div>
+            {t.expertise.cards.map((card, i) => {
+              const icons = [
+                <Zap className="w-6 h-6 text-brand-accent" />,
+                <Database className="w-6 h-6 text-brand-accent" />,
+                <Layout className="w-6 h-6 text-brand-accent" />,
+              ];
+              const tags = [
+                ["n8n", "Webhooks", "API Integration"],
+                ["Excel Advanced", "Power BI", "Data Pipelines"],
+                ["Kotlin", "Firebase", "REST API"],
+              ];
+              return (
+                <div key={i} className="p-8 rounded-xl glass hover:border-brand-accent/50 transition-all group">
+                  <div className="w-12 h-12 bg-brand-accent/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent/20 transition-colors">
+                    {icons[i]}
+                  </div>
+                  <h4 className="text-xl font-bold mb-4 tracking-tight">{card.title}</h4>
+                  <p className="text-sm text-brand-muted leading-relaxed mb-6">{card.desc}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {tags[i].map(tag => (
+                      <span key={tag} className="px-2 py-1 bg-white/5 rounded text-[10px] font-mono text-brand-muted">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -325,20 +497,15 @@ export default function App() {
         </div>
         <div className="max-w-7xl mx-auto relative">
           <div className="text-center mb-20">
-            <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-brand-accent mb-4">How I Work</h2>
+            <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-brand-accent mb-4">{t.process.label}</h2>
             <h3 className="text-4xl md:text-5xl font-bold tracking-tighter">
-              From chaos to clarity<span className="text-brand-muted font-light"> — four steps.</span>
+              {t.process.title}<span className="text-brand-muted font-light">{t.process.subtitle}</span>
             </h3>
           </div>
 
           <div className="grid md:grid-cols-4 gap-6 relative">
             <div className="hidden md:block absolute top-12 left-[13%] right-[13%] h-px bg-gradient-to-r from-transparent via-brand-border to-transparent" />
-            {[
-              { step: "01", title: "Diagnose", desc: "I map every friction point, manual step, and data gap before a single line is written. Nothing gets missed." },
-              { step: "02", title: "Architect", desc: "Design logic that handles real-world edge cases — not just happy paths. Tools are chosen last, never first." },
-              { step: "03", title: "Build & Test", desc: "Iterative builds with live testing at each stage. Breaking before production means fixing before deployment." },
-              { step: "04", title: "Deploy & Hand Off", desc: "Full documentation, training, and async support. Systems I build stay running long after I leave." },
-            ].map((item, i) => (
+            {t.process.steps.map((item, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
@@ -361,10 +528,10 @@ export default function App() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-12">
             <div className="md:w-1/3">
-              <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-brand-accent mb-4">Technology Stack</h2>
-              <h3 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Tools that survive the field.</h3>
+              <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-brand-accent mb-4">{t.tools.label}</h2>
+              <h3 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">{t.tools.title}</h3>
               <p className="text-brand-muted text-sm leading-relaxed">
-                Every tool chosen has a reason. No over-engineering. No hype-driven choices. Only what builds reliable, maintainable systems.
+                {t.tools.desc}
               </p>
             </div>
             <div className="md:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-3">
@@ -399,9 +566,9 @@ export default function App() {
       <section id="portfolio" className="py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="mb-14">
-            <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-brand-accent mb-4">Project Portfolio</h2>
-            <h3 className="text-4xl md:text-5xl font-bold tracking-tighter">Proven in production.</h3>
-            <p className="text-brand-muted mt-4 text-sm">4 clients. 5 systems. All running in the field.</p>
+            <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-brand-accent mb-4">{t.portfolio.label}</h2>
+            <h3 className="text-4xl md:text-5xl font-bold tracking-tighter">{t.portfolio.title}</h3>
+            <p className="text-brand-muted mt-4 text-sm">{t.portfolio.desc}</p>
           </div>
 
           {/* Per-client quick nav */}
@@ -423,12 +590,12 @@ export default function App() {
                 {/* Client Header */}
                 <div className={`flex items-center gap-4 mb-10 p-5 rounded-xl border ${client.borderColor} ${client.bgColor}`}>
                   <div className="flex-1">
-                    <div className="text-[10px] uppercase tracking-widest font-bold text-brand-muted mb-1">Client</div>
+                    <div className="text-[10px] uppercase tracking-widest font-bold text-brand-muted mb-1">{t.portfolio.client_label}</div>
                     <div className={`text-2xl font-black tracking-tight ${client.color}`}>{client.name}</div>
-                    <div className="text-sm text-brand-muted mt-0.5">{client.division}</div>
+                    <div className="text-sm text-brand-muted mt-0.5">{client.division[lang]}</div>
                   </div>
                   <div className="text-right">
-                    <div className="text-[10px] uppercase tracking-widest font-bold text-brand-muted mb-1">Systems Built</div>
+                    <div className="text-[10px] uppercase tracking-widest font-bold text-brand-muted mb-1">{t.portfolio.systems_label}</div>
                     <div className="text-4xl font-black font-mono text-brand-text">{client.projects.length}</div>
                   </div>
                 </div>
@@ -460,18 +627,18 @@ export default function App() {
                         </div>
                       </div>
                       <div>
-                        <div className="text-[10px] uppercase tracking-widest font-bold text-brand-muted mb-2">The Friction</div>
-                        <p className="text-sm text-brand-muted leading-relaxed mb-4">{project.problem}</p>
-                        <div className="text-[10px] uppercase tracking-widest font-bold text-brand-muted mb-2">The Engine</div>
-                        <p className="text-sm text-brand-muted leading-relaxed">{project.solution}</p>
+                        <div className="text-[10px] uppercase tracking-widest font-bold text-brand-muted mb-2">{t.portfolio.friction}</div>
+                        <p className="text-sm text-brand-muted leading-relaxed mb-4">{project.problem[lang]}</p>
+                        <div className="text-[10px] uppercase tracking-widest font-bold text-brand-muted mb-2">{t.portfolio.engine}</div>
+                        <p className="text-sm text-brand-muted leading-relaxed">{project.solution[lang]}</p>
                       </div>
                       <div className="p-4 rounded-lg bg-brand-accent/5 border-l-2 border-brand-accent h-fit">
-                        <div className="text-[10px] uppercase tracking-widest font-bold text-brand-accent mb-2">ROI & Impact</div>
-                        <p className="text-sm font-medium leading-relaxed">{project.roi}</p>
+                        <div className="text-[10px] uppercase tracking-widest font-bold text-brand-accent mb-2">{t.portfolio.roi}</div>
+                        <p className="text-sm font-medium leading-relaxed">{project.roi[lang]}</p>
                       </div>
                       {('image' in project || 'video' in project) && (
                         <div className="md:col-span-3 mt-2">
-                          <div className="text-[10px] uppercase tracking-widest font-bold text-brand-muted mb-3">Proof of Work</div>
+                          <div className="text-[10px] uppercase tracking-widest font-bold text-brand-muted mb-3">{t.portfolio.proof}</div>
                           {'video' in project && project.video ? (
                             <video src={project.video} controls autoPlay loop muted playsInline className="w-full rounded-xl border border-brand-border hover:border-brand-accent/50 transition-all" />
                           ) : 'image' in project && project.image ? (
@@ -494,22 +661,18 @@ export default function App() {
       <section className="py-28 px-6 bg-white text-black">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
-            <div className="inline-block px-3 py-1 bg-black text-white text-[10px] font-bold uppercase tracking-[0.3em] rounded mb-6">The Architect Advantage</div>
+            <div className="inline-block px-3 py-1 bg-black text-white text-[10px] font-bold uppercase tracking-[0.3em] rounded mb-6">{t.whyme.badge}</div>
             <h2 className="text-5xl md:text-7xl font-black tracking-tighter leading-none">
-              Why an Architect,<br />not a freelancer?
+              {t.whyme.title1}<br />{t.whyme.title2}
             </h2>
           </div>
           <div className="grid md:grid-cols-2 gap-16">
             <div>
               <p className="text-xl opacity-70 leading-relaxed mb-14">
-                Most automation engineers have never managed a team. Most operations managers cannot build automation. I do both — and that combination is rare.
+                {t.whyme.p}
               </p>
               <div className="space-y-10">
-                {[
-                  { title: "I understand the problem from inside", desc: "I have worked in operations. I know what breaks in the field. The systems I build solve real problems, not theoretical ones." },
-                  { title: "Everything proven in production", desc: "All systems in this portfolio ran in real operations. Not demo environments, not practice projects. Real data, real teams, real scale." },
-                  { title: "No hand-holding required", desc: "I scope, design, build, and deliver. You brief me once. I translate it into a system that outlasts the engagement." }
-                ].map((item, i) => (
+                {t.whyme.checks.map((item, i) => (
                   <div key={i} className="flex gap-5">
                     <CheckCircle2 className="w-6 h-6 shrink-0 text-brand-accent mt-0.5" />
                     <div>
@@ -521,11 +684,7 @@ export default function App() {
               </div>
             </div>
             <div className="grid grid-cols-1 gap-6">
-              {[
-                { title: "Cross-industry adaptability", desc: "Telecoms, logistics, and now app development. The same principles apply. The same approach works. I adapt quickly." },
-                { title: "Results over complexity", desc: "The goal is never an impressive-looking system. The goal is giving time back to the team. Simple, reliable, and actually used." },
-                { title: "Async-first communication", desc: "I work across time zones. Documentation is thorough. Handoffs are clean. You are never left waiting for status updates." }
-              ].map((item, i) => (
+              {t.whyme.cards.map((item, i) => (
                 <div key={i} className="p-8 border border-black/10 rounded-2xl hover:bg-black hover:text-white transition-all group cursor-default">
                   <h4 className="font-bold text-2xl mb-3 tracking-tight">{item.title}</h4>
                   <p className="opacity-60 leading-relaxed group-hover:opacity-80 transition-opacity">{item.desc}</p>
@@ -548,13 +707,13 @@ export default function App() {
             viewport={{ once: true }}
             className="text-center mb-20"
           >
-            <h2 className="text-xs font-bold uppercase tracking-[0.4em] text-brand-accent mb-6">Let's Work Smart, Not Harder</h2>
+            <h2 className="text-xs font-bold uppercase tracking-[0.4em] text-brand-accent mb-6">{t.contact.label}</h2>
             <h3 className="text-5xl md:text-8xl font-black tracking-tighter mb-6 leading-none">
-              Have a system<br />
-              <span className="text-brand-accent">in mind? Let's talk.</span>
+              {t.contact.title1}<br />
+              <span className="text-brand-accent">{t.contact.title2}</span>
             </h3>
             <p className="text-brand-muted max-w-xl mx-auto leading-relaxed">
-              Whether it's automation, a full-stack app, or untangling messy operations — reach out and let's figure out what makes sense for your case.
+              {t.contact.desc}
             </p>
           </motion.div>
 
@@ -625,7 +784,7 @@ export default function App() {
           </div>
 
           <div className="mb-8">
-            <div className="text-center text-[10px] uppercase tracking-widest font-bold text-brand-muted mb-5">Also Available On</div>
+            <div className="text-center text-[10px] uppercase tracking-widest font-bold text-brand-muted mb-5">{t.contact.also_on}</div>
             <div className="flex flex-wrap justify-center gap-3">
               <a href="https://www.fiverr.com/tamtam2492" target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-2 px-5 py-3 glass rounded-xl hover:border-[#1DBF73]/50 hover:bg-[#1DBF73]/10 transition-all group">
@@ -640,7 +799,7 @@ export default function App() {
 
           <div className="text-center">
             <div className="text-brand-muted text-[10px] uppercase tracking-widest font-bold">
-              Based in Makassar, Indonesia • Serving Global Enterprise Clients
+              {t.contact.based}
             </div>
           </div>
         </div>
@@ -654,11 +813,11 @@ export default function App() {
             <span className="font-mono text-xs tracking-widest uppercase font-bold text-brand-muted">Muhammad Tharmizy Tahir, ST © 2026</span>
           </div>
           <div className="text-[10px] uppercase tracking-widest font-bold text-brand-muted text-center">
-            Operations Systems Architect • Built with React & Tailwind
+            {t.footer.tagline}
           </div>
           <div className="flex gap-6 text-[10px] uppercase tracking-widest font-bold text-brand-muted">
-            <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3 h-3 text-brand-accent" /> n8n Expert</span>
-            <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3 h-3 text-brand-accent" /> Ops Architect</span>
+            <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3 h-3 text-brand-accent" /> {t.footer.n8n}</span>
+            <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3 h-3 text-brand-accent" /> {t.footer.ops}</span>
           </div>
         </div>
       </footer>
