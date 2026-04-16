@@ -228,7 +228,9 @@
   </div>
   <div class="tools-line">
     <span>n8n</span><span>Telegram Bot API</span><span>WhatsApp Automation</span><span>Google Sheets</span><span>Google Forms</span>
-    <span>Microsoft Excel</span><span>AI / OCR</span><span>REST API</span><span>Firebase</span><span>Android (Kotlin)</span><span>Power BI</span>
+    <span>Microsoft Excel</span><span>Power BI</span><span>AI / OCR</span><span>Groq AI</span><span>REST API</span>
+    <span>Node.js</span><span>Express.js</span><span>MongoDB Atlas</span><span>Supabase</span><span>React</span><span>PWA</span><span>Vercel</span><span>JWT</span>
+    <span>Firebase</span><span>Android (Kotlin)</span><span>Google Maps API</span>
   </div>
 
   <!-- Project Portfolio -->
@@ -290,29 +292,29 @@
 
   <div class="project-card">
     <div class="project-header">
-      <h3>3. Expedition Collection &amp; Reconciliation System</h3>
-      <div class="project-sub">Logistics Business — Multi-Branch Sulawesi (80+ Branches, 2 Areas)</div>
+      <h3>3. Transfer Dashboard &amp; Reconciliation System</h3>
+      <div class="project-sub">PT Maulagi Indo Solusi — 80+ Branches, 2 Operational Areas (Makassar / Remote)</div>
     </div>
     <div class="project-body">
       <div class="project-row">
         <div class="label">The Problem</div>
-        <p>A logistics business with 80+ branches across 2 operational areas (Sulawesi Tenggara &amp; Makassar Outer) had no standardized way to collect payment data. Reconciling shipping costs against actual transfers from multiple banks (BRI, BCA, ShopeePay, GoPay, BNI, DANA) was done manually — took up to 14 days and discrepancies went undetected.</p>
+        <p>80+ branches across 2 operational areas (SE Sulawesi &amp; Makassar Outer) had no digital system to submit or verify transfer proofs. Multi-bank payments (BRI, BCA, ShopeePay, GoPay, BNI, DANA) were tracked manually — reconciliation took up to 14 days and discrepancies went undetected for weeks.</p>
       </div>
       <div class="project-row">
         <div class="label">What I Built</div>
-        <p>End-to-end data pipeline: branch operators submit transfer proof via Google Forms → auto-stored in Google Drive + Google Sheets with timestamps → fed into a 49-column Excel reconciliation engine that matches shipping costs against actual bank transfers across all branches and flags discrepancies instantly. Daily, monthly, and per-bank summaries generated automatically.</p>
+        <p>Full-stack web application deployed on Vercel. Branch operators upload transfer proof photos via a web form — Groq AI/OCR auto-extracts bank name, amount, and date. Data is stored in Supabase (PostgreSQL) with deduplication checks. Admin dashboard provides real-time visibility per branch, per bank, and per period with XLSX export. Secured with bcrypt auth, rate limiting, and OWASP-aligned HTTP security headers.</p>
       </div>
       <div class="project-row">
         <div class="label">Tools Used</div>
-        <div class="tools-row"><span>Google Forms</span><span>Google Sheets</span><span>Google Drive</span><span>Microsoft Excel</span><span>SUMIFS</span><span>LET</span><span>FILTER</span><span>XLOOKUP</span></div>
+        <div class="tools-row"><span>Node.js</span><span>Supabase</span><span>Groq AI / OCR</span><span>Vercel</span><span>bcrypt</span><span>REST API</span><span>HTML/CSS/JS</span></div>
       </div>
       <div class="project-row" style="margin-bottom:0">
         <div class="label">Result</div>
-        <p>Reduced monthly reconciliation cycle time by over 90% — from 14 days to 6 hours. 99% duplicate elimination. Handles Rp90M+ monthly transaction volume. Full financial visibility — management sees branch-level accuracy daily without manual effort.</p>
+        <p>Reconciliation cycle cut from 14 days to same-day. 99% duplicate entries eliminated. Rp90M+/month transaction volume tracked in real-time across 80+ branches. Management gets live branch-level accuracy without any manual effort.</p>
       </div>
       <div class="project-row" style="margin-top:12px">
         <div class="label">Proof of Work</div>
-        <img src="maulagi-proof.png" alt="Maulagi Reconciliation System — Google Forms Input + Excel Report Overview" style="width:100%;border-radius:8px;margin-top:6px;">
+        <img src="/maulagi-proof.jpg" alt="Maulagi Transfer Dashboard — Admin view, branch upload, reconciliation" style="width:100%;border-radius:8px;border:1px solid #c8d8e8;margin-top:6px;">
       </div>
     </div>
   </div>
