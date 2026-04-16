@@ -185,10 +185,10 @@ export default function App() {
                 <Cpu className="w-3 h-3" /> Fullstack Developer | Automation Specialist | Workflow & AI Orchestration
               </div>
               <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-[1.0] mb-8 text-gradient">
-                Turning operational chaos into $3,500+ monthly savings.
+                Filling the gap between operations and automation.
               </h1>
               <p className="text-lg md:text-xl text-brand-muted mb-6 leading-relaxed max-w-2xl">
-                I build the <span className="text-white font-medium italic">"Final Brain"</span> logic for enterprise workflows — and I measure success in <span className="text-white font-semibold">hours reclaimed, errors eliminated, and money saved</span>. Not in lines of code.
+                I don't just write code — I <span className="text-white font-medium">orchestrate intelligent systems</span>. By leveraging AI workflows, I deliver production-grade solutions (Android, PWA, Automations) with the speed and scale of an entire team.
               </p>
               <p className="text-sm text-brand-muted mb-6 leading-relaxed max-w-2xl">
                 Proven field operations leadership — led, monitored, and coordinated <span className="text-white font-semibold">50+ agents across 5 cities in Sulawesi</span> (Makassar, Manado, Palu, Kendari, Gorontalo), including recruitment, performance evaluation, and resolving field issues. I know what breaks on the ground, and I build automation that survives it.
@@ -211,7 +211,7 @@ export default function App() {
                   rel="noopener noreferrer"
                   className="border border-[#1DBF73] text-[#1DBF73] px-8 py-4 rounded font-bold flex items-center gap-2 hover:bg-[#1DBF73] hover:text-white transition-all"
                 >
-                  Start Your Transformation <Globe className="w-4 h-4" />
+                  View on Fiverr <Globe className="w-4 h-4" />
                 </a>
                 <div className="flex items-center gap-4 px-6 py-4 rounded border border-brand-border font-mono text-xs text-brand-muted">
                   <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
@@ -548,13 +548,13 @@ export default function App() {
             viewport={{ once: true }}
             className="text-center mb-20"
           >
-            <h2 className="text-xs font-bold uppercase tracking-[0.4em] text-brand-accent mb-6">Stop Losing Money to Manual Work</h2>
+            <h2 className="text-xs font-bold uppercase tracking-[0.4em] text-brand-accent mb-6">Let's Work Smart, Not Harder</h2>
             <h3 className="text-5xl md:text-8xl font-black tracking-tighter mb-6 leading-none">
-              Let's build your<br />
-              <span className="text-brand-accent">$3,500+/mo Engine.</span>
+              Have a system<br />
+              <span className="text-brand-accent">in mind? Let's talk.</span>
             </h3>
             <p className="text-brand-muted max-w-xl mx-auto leading-relaxed">
-              Every hour your team spends on manual data entry is money left on the table. I fix that — fast. Message me now and let's scope your system.
+              Whether it's automation, a full-stack app, or untangling messy operations — reach out and let's figure out what makes sense for your case.
             </p>
           </motion.div>
 
