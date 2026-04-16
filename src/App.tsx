@@ -153,7 +153,7 @@ const translations = {
     process: {
       label: "How I Work",
       title: "From chaos to clarity",
-      subtitle: " — four steps.",
+      subtitle: "Four steps. No surprises.",
       steps: [
         { step: "01", title: "Diagnose", desc: "I map every friction point, manual step, and data gap before a single line is written. Nothing gets missed." },
         { step: "02", title: "Architect", desc: "Design logic that handles real-world edge cases — not just happy paths. Tools are chosen last, never first." },
@@ -243,7 +243,7 @@ const translations = {
     process: {
       label: "Cara Kerja Saya",
       title: "Dari kekacauan ke kejelasan",
-      subtitle: " — empat langkah.",
+      subtitle: "Empat langkah. Tanpa kejutan.",
       steps: [
         { step: "01", title: "Diagnosa", desc: "Saya memetakan setiap titik gesekan, langkah manual, dan kesenjangan data sebelum satu baris kode pun ditulis. Tidak ada yang terlewat." },
         { step: "02", title: "Arsitektur", desc: "Merancang logika yang menangani kasus tepi dunia nyata — bukan hanya jalur bahagia. Tools dipilih terakhir, bukan pertama." },
@@ -328,7 +328,7 @@ export default function App() {
       {/* ── Navigation ── */}
       <nav className="fixed top-0 w-full z-50 bg-brand-bg/95 backdrop-blur-sm border-b border-brand-border px-6 py-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <span className="font-serif text-base tracking-tight text-brand-text">
+          <span className="font-serif text-lg font-semibold tracking-tight text-brand-text">
             Muhammad Tharmizy Tahir
           </span>
           <div className="hidden md:flex items-center gap-10 text-[11px] uppercase tracking-[0.15em] font-semibold text-brand-muted">
@@ -499,8 +499,9 @@ export default function App() {
           <div className="mb-16">
             <p className="label-caps mb-4">{t.process.label}</p>
             <h2 className="font-serif text-3xl md:text-5xl leading-snug">
-              {t.process.title}<span className="text-brand-muted italic font-serif">{t.process.subtitle}</span>
+              {t.process.title}
             </h2>
+            <p className="text-brand-muted text-sm mt-3 tracking-wide">{t.process.subtitle}</p>
           </div>
 
           <div className="grid md:grid-cols-4 gap-8">
@@ -701,7 +702,7 @@ export default function App() {
           >
             <p className="label-caps mb-6">{t.contact.label}</p>
             <h2 className="font-serif text-4xl md:text-6xl leading-tight mb-6 max-w-2xl">
-              {t.contact.title1}<br /><span className="italic text-brand-accent">{t.contact.title2}</span>
+              {t.contact.title1}<br /><span className="italic">{t.contact.title2}</span>
             </h2>
             <p className="text-brand-muted max-w-lg leading-relaxed">{t.contact.desc}</p>
           </motion.div>
