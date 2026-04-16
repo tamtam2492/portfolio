@@ -184,7 +184,7 @@ export default function App() {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-accent/10 border border-brand-accent/20 text-brand-accent text-[10px] font-bold uppercase tracking-widest mb-6">
                 <Cpu className="w-3 h-3" /> Fullstack Developer | Automation Specialist | Workflow & AI Orchestration
               </div>
-              <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-[1.0] mb-8 text-gradient">
+              <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-[1.1] pb-1 mb-8 text-gradient">
                 Filling the gap between operations and automation.
               </h1>
               <p className="text-lg md:text-xl text-brand-muted mb-6 leading-relaxed max-w-2xl">
