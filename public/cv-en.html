@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>CV - Muhammad Tharmizy Tahir, S.T.</title>
+<title>CV - Muhammad Tharmizy Tahir</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -20,26 +20,24 @@ body {
 }
 /* ── Header ── */
 .header {
-  background: #1e3a5f;
-  color: #fff;
-  border-radius: 6px;
-  padding: 20px 24px 16px;
+  border-bottom: 2px solid #1e3a5f;
+  padding: 0 0 16px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   gap: 20px;
 }
 .header-text { flex: 1; }
-.header h1 { font-size: 22pt; font-weight: 700; letter-spacing: -0.3px; }
-.header .subtitle { font-size: 10pt; color: #b8d4f0; margin-top: 4px; }
-.header .tagline { font-size: 9pt; color: #7fa8cc; margin-top: 3px; font-style: italic; }
-.header .contact-line { font-size: 8.5pt; color: #9bbfe0; margin-top: 8px; line-height: 1.7; }
-.header .contact-line a { color: #9bbfe0; text-decoration: none; }
+.header h1 { font-size: 22pt; font-weight: 700; letter-spacing: -0.3px; color: #1a1a1a; }
+.header .subtitle { font-size: 10pt; color: #444; margin-top: 4px; }
+.header .tagline { font-size: 9pt; color: #555; margin-top: 3px; }
+.header .contact-line { font-size: 8.5pt; color: #333; margin-top: 8px; line-height: 1.7; }
+.header .contact-line a { color: #1e3a5f; text-decoration: none; }
 .foto {
   width: 90px; height: 110px;
   object-fit: cover; object-position: top;
   border-radius: 5px;
-  border: 2px solid #3a6ea0;
+  border: 1px solid #ccc;
   flex-shrink: 0;
 }
 /* ── Section heading ── */
@@ -54,24 +52,7 @@ h2.section {
   margin-bottom: 12px;
   margin-top: 22px;
 }
-/* ── Stats bar ── */
-.stats-bar {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0;
-  border: 1px solid #c8d8e8;
-  border-radius: 5px;
-  overflow: hidden;
-  margin-bottom: 4px;
-}
-.stat-cell {
-  padding: 10px 6px;
-  text-align: center;
-  border-right: 1px solid #c8d8e8;
-}
-.stat-cell:last-child { border-right: none; }
-.stat-val { font-size: 16pt; font-weight: 700; color: #1e3a5f; }
-.stat-label { font-size: 7.5pt; color: #666; margin-top: 2px; }
+/* ── Stats (plain list, ATS-safe) ── */
 /* ── Skills ── */
 .skills-grid {
   display: grid;
@@ -135,9 +116,9 @@ h2.section {
 <!-- HEADER -->
 <div class="header">
   <div class="header-text">
-    <h1>Muhammad Tharmizy Tahir, S.T.</h1>
+    <h1>Muhammad Tharmizy Tahir</h1>
     <div class="subtitle">Fullstack Developer &nbsp;|&nbsp; Automation Specialist &nbsp;|&nbsp; Workflow &amp; AI Orchestration</div>
-    <div class="tagline">n8n &nbsp;·&nbsp; AI/OCR &nbsp;·&nbsp; AI Prompt Engineering &nbsp;·&nbsp; Telegram Bot &nbsp;·&nbsp; Android &nbsp;·&nbsp; Excel &nbsp;·&nbsp; Power BI</div>
+    <div class="tagline">n8n, AI/OCR, AI Prompt Engineering, Telegram Bot, Android, Excel, Power BI</div>
     <div class="contact-line">
       muhammad.tharmizy@gmail.com &nbsp;|&nbsp; +62 853-4202-0433 &nbsp;|&nbsp; Makassar, Indonesia &nbsp;|&nbsp; Available for Remote Worldwide<br/>
       <a href="https://linkedin.com/in/muhammadtharmizy">LinkedIn: muhammadtharmizy</a> &nbsp;|&nbsp;
@@ -168,12 +149,12 @@ I don&rsquo;t just build systems - I understand what breaks in the real world an
 
 <!-- STATS -->
 <h2 class="section">M E A S U R A B L E &nbsp; I M P A C T</h2>
-<div class="stats-bar">
-  <div class="stat-cell"><div class="stat-val">100%</div><div class="stat-label">Manual Work Eliminated</div></div>
-  <div class="stat-cell"><div class="stat-val">95%+</div><div class="stat-label">AI/OCR Accuracy</div></div>
-  <div class="stat-cell"><div class="stat-val">50+</div><div class="stat-label">Field Agents Managed</div></div>
-  <div class="stat-cell"><div class="stat-val">$3.5k+</div><div class="stat-label">Monthly Savings / Client</div></div>
-</div>
+<ul style="padding-left:16px;font-size:9.5pt;color:#333;margin-bottom:4px;">
+  <li><strong>100%</strong> of manual data entry eliminated via Telegram + n8n + AI/OCR automation</li>
+  <li><strong>95%+</strong> AI/OCR accuracy sustained across 500+ daily transactions</li>
+  <li><strong>50+ field agents</strong> managed across 7 cities in Sulawesi</li>
+  <li><strong>$3,500+/month</strong> in estimated operational savings delivered per client</li>
+</ul>
 
 <!-- CORE SKILLS -->
 <h2 class="section">C O R E &nbsp; S K I L L S</h2>
@@ -341,7 +322,7 @@ I don&rsquo;t just build systems - I understand what breaks in the real world an
 <div class="info-row"><span class="info-key">Freelance</span><span class="info-val">fiverr.com/tamtam2492</span></div>
 
 <div class="footer">
-  CV - Muhammad Tharmizy Tahir, S.T. &nbsp;|&nbsp; muhammad.tharmizy@gmail.com &nbsp;|&nbsp; +62 853-4202-0433 &nbsp;|&nbsp; Makassar, Indonesia
+  Muhammad Tharmizy Tahir &nbsp;|&nbsp; muhammad.tharmizy@gmail.com &nbsp;|&nbsp; +62 853-4202-0433 &nbsp;|&nbsp; Makassar, Indonesia
 </div>
 
 </div>
