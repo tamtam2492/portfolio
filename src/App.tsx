@@ -4,7 +4,7 @@
  */
 
 import { motion } from "motion/react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { 
   Zap, 
   Cpu, 
@@ -301,7 +301,16 @@ const translations = {
 
 export default function App() {
   const [portfolioOpen, setPortfolioOpen] = useState(false);
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [lang, setLang] = useState<Lang>('en');
+
+  const openDropdown = () => {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    setPortfolioOpen(true);
+  };
+  const closeDropdown = () => {
+    closeTimer.current = setTimeout(() => setPortfolioOpen(false), 180);
+  };
   const t = translations[lang];
 
   const toolGroups = [
@@ -324,12 +333,12 @@ export default function App() {
           </span>
           <div className="hidden md:flex items-center gap-10 text-[11px] uppercase tracking-[0.15em] font-semibold text-brand-muted">
             <a href="#expertise" className="hover:text-brand-accent transition-colors">{t.nav.expertise}</a>
-            <div className="relative" onMouseEnter={() => setPortfolioOpen(true)} onMouseLeave={() => setPortfolioOpen(false)}>
+            <div className="relative" onMouseEnter={openDropdown} onMouseLeave={closeDropdown}>
               <a href="#portfolio" className="flex items-center gap-1 hover:text-brand-accent transition-colors">
                 {t.nav.portfolio} <ChevronDown className={`w-3 h-3 transition-transform ${portfolioOpen ? 'rotate-180' : ''}`} />
               </a>
               {portfolioOpen && (
-                <div className="absolute top-full left-0 mt-2 w-52 bg-brand-bg border border-brand-border py-2 z-50">
+                <div className="absolute top-full left-0 mt-2 w-52 bg-brand-bg border border-brand-border py-2 z-50" onMouseEnter={openDropdown} onMouseLeave={closeDropdown}>
                   {clients.map((client) => (
                     <a
                       key={client.id}
