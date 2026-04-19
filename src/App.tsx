@@ -131,7 +131,7 @@ const translations = {
       quote: '"As long as there is data that needs to be tracked, I can automate it. Because I have proven it in the field."',
       cta_hire: "Hire Me Now",
       cta_fiverr: "View on Fiverr",
-      available: "Available for New Projects",
+      available: "Open to the Right Projects",
       badge_img: "4 Clients • 5 Systems",
     },
     stats: [
@@ -221,7 +221,7 @@ const translations = {
       quote: '"Selama ada data yang perlu dilacak, saya bisa mengotomatisasinya. Karena saya sudah membuktikannya di lapangan."',
       cta_hire: "Hubungi Sekarang",
       cta_fiverr: "Lihat di Fiverr",
-      available: "Tersedia untuk Proyek Baru",
+      available: "Terbuka untuk Proyek yang Tepat",
       badge_img: "4 Klien • 5 Sistem",
     },
     stats: [
