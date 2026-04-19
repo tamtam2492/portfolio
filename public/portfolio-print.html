@@ -302,15 +302,15 @@
       </div>
       <div class="project-row">
         <div class="label">What I Built</div>
-        <p>Full-stack web application with a hybrid Vercel + AWS Lambda architecture. Branch operators upload transfer proof photos via a web form — Groq AI/OCR auto-extracts bank name, amount, and date. Data is stored in Supabase (PostgreSQL) with deduplication checks. Admin dashboard provides real-time visibility per branch, per bank, and per period with XLSX export. Includes a NONCOD/DFOD monitoring module with MauKirim courier sync. AWS Lambda handles operational Telegram notifications and background sync pipelines. Secured with bcrypt auth, rate limiting, and OWASP-aligned HTTP security headers.</p>
+        <p>Full-stack web application with a hybrid Vercel + AWS Lambda architecture. Branch operators upload transfer proof photos via a web form — Groq AI/OCR auto-extracts bank name, amount, and date. Data is stored in Supabase (PostgreSQL) with deduplication checks. OCR and NONCOD sync use async background pipelines so user requests return instantly while heavy processing runs separately. Admin dashboard provides real-time visibility per branch, per bank, and per period with XLSX export. NONCOD/DFOD monitoring synchronized from MauKirim. AWS Lambda handles operational Telegram notifications and background sync pipelines. Rate limiting enforced per-instance via Upstash Redis. Secured with bcrypt auth and OWASP-aligned HTTP security headers.</p>
       </div>
       <div class="project-row">
         <div class="label">Tools Used</div>
-        <div class="tools-row"><span>Node.js</span><span>Supabase</span><span>Groq AI / OCR</span><span>Vercel</span><span>AWS Lambda</span><span>bcrypt</span><span>REST API</span><span>HTML/CSS/JS</span></div>
+        <div class="tools-row"><span>Node.js</span><span>Supabase</span><span>Groq AI / OCR</span><span>Vercel</span><span>AWS Lambda</span><span>Upstash Redis</span><span>bcrypt</span><span>REST API</span><span>HTML/CSS/JS</span></div>
       </div>
       <div class="project-row" style="margin-bottom:0">
         <div class="label">Result</div>
-        <p>Reconciliation cycle cut from 14 days to same-day. 99% duplicate entries eliminated. Rp90M+/month transaction volume tracked in real-time across 80+ branches. Management gets live branch-level accuracy without any manual effort.</p>
+        <p>Reconciliation cycle cut from 14 days to same-day. 99% data duplicates eliminated. Rp90M+/month transaction volume monitored in real-time across 80+ branches. Management gets live branch-level accuracy without any manual effort.</p>
       </div>
       <div class="project-row" style="margin-top:12px">
         <div class="label">Proof of Work</div>

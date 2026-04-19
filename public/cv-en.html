@@ -198,11 +198,11 @@ I don&rsquo;t just build systems - I understand what breaks in the real world an
   <ul>
     <li>Full-stack web app with hybrid Vercel + AWS Lambda architecture (Node.js + Supabase) for 80+ branches across 2 operational areas, Rp90M+/month transaction volume</li>
     <li>Branch operators upload transfer proof photos → Groq AI/OCR auto-extracts bank name, amount, and date with deduplication checks</li>
+    <li>OCR and NONCOD sync use async background pipelines; user requests return instantly while heavy processing runs separately</li>
     <li>Admin dashboard: real-time visibility per branch, per bank, per period — XLSX export across 6 banks (BRI, BCA, ShopeePay, GoPay, BNI, DANA)</li>
-    <li>NONCOD/DFOD monitoring module with MauKirim courier sync integration</li>
-    <li>AWS Lambda handles operational Telegram notifications and background NONCOD sync pipelines</li>
+    <li>NONCOD/DFOD monitoring synchronized from MauKirim; AWS Lambda handles Telegram notifications and background sync</li>
+    <li>Rate limiting enforced per-instance via Upstash Redis; secured with bcrypt auth and OWASP-aligned HTTP security headers</li>
     <li>Reconciliation cycle cut from <strong>14 days to same-day</strong>; 99% of duplicates eliminated</li>
-    <li>Secured with bcrypt auth, rate limiting, and OWASP-aligned HTTP security headers</li>
   </ul>
 </div>
 

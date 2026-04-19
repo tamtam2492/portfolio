@@ -215,12 +215,12 @@ Saya tidak hanya membangun sistem - saya memahami apa yang rusak di lapangan dan
   </div>
   <ul>
     <li>Full-stack web app dengan arsitektur hybrid Vercel + AWS Lambda (Node.js + Supabase) untuk 80+ cabang di 2 area operasional, volume Rp90M+/bulan</li>
-    <li>Operator cabang upload foto bukti transfer → Groq AI/OCR otomatis ekstrak nama bank, nominal, dan tanggal dengan cek duplikat</li>
-    <li>Dashboard admin: visibilitas real-time per cabang, per bank, per periode — export XLSX dari 6 bank (BRI, BCA, ShopeePay, GoPay, BNI, DANA)</li>
-    <li>Modul monitoring NONCOD/DFOD dengan integrasi sinkronisasi kurir MauKirim</li>
-    <li>AWS Lambda menangani notifikasi operasional Telegram dan pipeline sync NONCOD background</li>
-    <li>Siklus rekonsiliasi dipangkas dari <strong>14 hari menjadi hari yang sama</strong>; 99% duplikat dihilangkan</li>
-    <li>Diamankan dengan bcrypt auth, rate limiting, dan HTTP security headers sesuai standar OWASP</li>
+    <li>Operator cabang mengunggah foto bukti transfer → Groq AI/OCR secara otomatis membaca nama bank, nominal, dan tanggal dengan deteksi data duplikat</li>
+    <li>OCR dan sinkronisasi NONCOD memakai pipeline background asinkron agar request pengguna selesai cepat sementara proses berat berjalan terpisah</li>
+    <li>Dashboard admin: visibilitas real-time per cabang, per bank, per periode — ekspor XLSX dari 6 bank (BRI, BCA, ShopeePay, GoPay, BNI, DANA)</li>
+    <li>Monitoring NONCOD/DFOD tersinkronisasi dari MauKirim; AWS Lambda menangani notifikasi Telegram dan pipeline sinkronisasi background</li>
+    <li>Rate limiting per-instance via Upstash Redis; diamankan dengan bcrypt dan HTTP security headers sesuai standar OWASP</li>
+    <li>Siklus rekonsiliasi dipangkas dari <strong>14 hari menjadi hari yang sama</strong>; 99% data duplikat berhasil disaring</li>
   </ul>
 </div>
 
