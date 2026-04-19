@@ -214,12 +214,13 @@ Saya tidak hanya membangun sistem - saya memahami apa yang rusak di lapangan dan
     <span class="job-meta">Jan 2026 – Sekarang &nbsp;|&nbsp; Makassar / Remote</span>
   </div>
   <ul>
-    <li>Full-stack web app (Node.js + Supabase + Vercel) untuk 80+ cabang di 2 area operasional, volume Rp90M+/bulan</li>
+    <li>Full-stack web app dengan arsitektur hybrid Vercel + AWS Lambda (Node.js + Supabase) untuk 80+ cabang di 2 area operasional, volume Rp90M+/bulan</li>
     <li>Operator cabang upload foto bukti transfer → Groq AI/OCR otomatis ekstrak nama bank, nominal, dan tanggal dengan cek duplikat</li>
-    <li>Dashboard admin: visibilitas real-time per cabang, per bank, per periode — dengan export XLSX dari 6 bank (BRI, BCA, ShopeePay, GoPay, BNI, DANA)</li>
+    <li>Dashboard admin: visibilitas real-time per cabang, per bank, per periode — export XLSX dari 6 bank (BRI, BCA, ShopeePay, GoPay, BNI, DANA)</li>
+    <li>Modul monitoring NONCOD/DFOD dengan integrasi sinkronisasi kurir MauKirim</li>
+    <li>AWS Lambda menangani notifikasi operasional Telegram dan pipeline sync NONCOD background</li>
     <li>Siklus rekonsiliasi dipangkas dari <strong>14 hari menjadi hari yang sama</strong>; 99% duplikat dihilangkan</li>
     <li>Diamankan dengan bcrypt auth, rate limiting, dan HTTP security headers sesuai standar OWASP</li>
-    <li>Full system lifecycle: pengumpulan kebutuhan, desain, build, deployment di Vercel</li>
   </ul>
 </div>
 
@@ -253,8 +254,9 @@ Saya tidak hanya membangun sistem - saya memahami apa yang rusak di lapangan dan
     <span class="job-meta">2024 &nbsp;|&nbsp; Makassar</span>
   </div>
   <ul>
-    <li>Full-stack PWA: Express.js + MongoDB Atlas + React; live di Vercel</li>
-    <li>Fitur: manajemen produk &amp; stok, riwayat transaksi, struk termal Bluetooth, alert stok rendah</li>
+    <li>Full-stack PWA: React 19 (esbuild) + Express.js + MongoDB Atlas; live di Vercel (kasir-nie-buket.vercel.app)</li>
+    <li>Fitur: kasir harian dengan validasi stok, pre-order &amp; booking dengan jadwal pengambilan, struk termal Bluetooth, PWA offline queue</li>
+    <li>Laporan penjualan Chart.js, export Excel rentang tanggal (ExcelJS), autentikasi session dengan proteksi password untuk aksi hapus/reset</li>
   </ul>
 </div>
 
