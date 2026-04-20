@@ -138,7 +138,7 @@ const translations = {
       { label: "Manual Work Eliminated", value: "100%" },
       { label: "AI/OCR Accuracy", value: "95%+" },
       { label: "Agents Managed", value: "50+" },
-      { label: "Monthly Savings Delivered", value: "$3.5k+" },
+      { label: "Hours Saved Daily", value: "15+" },
     ],
     expertise: {
       label: "Core Knowledge Base",
@@ -228,7 +228,7 @@ const translations = {
       { label: "Pekerjaan Manual Dieliminasi", value: "100%" },
       { label: "Akurasi AI/OCR", value: "95%+" },
       { label: "Agen Dikelola", value: "50+" },
-      { label: "Penghematan Bulanan", value: "$3.5k+" },
+      { label: "Jam Dihemat Per Hari", value: "15+" },
     ],
     expertise: {
       label: "Basis Pengetahuan Inti",
