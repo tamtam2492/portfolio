@@ -48,7 +48,7 @@ const clients = [
         title: "Field Team Monitoring System",
         problem: { en: "No unified system for 50+ agents across 5 cities — Makassar, Manado, Palu, Kendari, and Gorontalo. Management spent days just consolidating data.", id: "Tidak ada sistem terpadu untuk 50+ agen di 5 kota — Makassar, Manado, Palu, Kendari, dan Gorontalo. Manajemen menghabiskan berhari-hari hanya untuk mengkonsolidasi data." },
         solution: { en: "Custom Excel-based operational backbone aggregating ACH Target, Recovery Rate, and Gap Analysis automatically across all cities. Automated reporting replaced manual daily compilation.", id: "Backbone operasional berbasis Excel kustom yang mengagregasi Target ACH, Recovery Rate, dan Gap Analysis secara otomatis di semua kota. Pelaporan otomatis menggantikan kompilasi manual harian." },
-        roi: { en: "Shifted leadership focus from data collection to decision-making. 42% improvement in task completion time. Reduced coordination overhead by 8 hours per day for management.", id: "Mengalihkan fokus kepemimpinan dari pengumpulan data ke pengambilan keputusan. Peningkatan 42% waktu penyelesaian tugas. Mengurangi overhead koordinasi 8 jam per hari untuk manajemen." },
+        roi: { en: "Eliminated multi-day manual data consolidation across 50+ agents and 5 cities. Management moved from compiling reports to acting on them — daily reporting replaced entirely by automated aggregation.", id: "Menghilangkan konsolidasi data manual berhari-hari dari 50+ agen di 5 kota. Manajemen beralih dari menyusun laporan ke mengambil keputusan — pelaporan harian sepenuhnya digantikan oleh agregasi otomatis." },
         tools: ["Advanced Excel", "SUMIFS", "XLOOKUP", "Data Architecture"],
         icon: <BarChart3 className="w-5 h-5 text-green-400" />
       },
@@ -136,7 +136,7 @@ const translations = {
     },
     stats: [
       { label: "Manual Work Eliminated", value: "100%" },
-      { label: "AI/OCR Accuracy", value: "95%+" },
+      { label: "Receipt Accuracy", value: "95%+" },
       { label: "Agents Managed", value: "50+" },
       { label: "Hours Saved Daily", value: "15+" },
     ],
@@ -226,7 +226,7 @@ const translations = {
     },
     stats: [
       { label: "Pekerjaan Manual Dieliminasi", value: "100%" },
-      { label: "Akurasi AI/OCR", value: "95%+" },
+      { label: "Akurasi Pembacaan Struk", value: "95%+" },
       { label: "Agen Dikelola", value: "50+" },
       { label: "Jam Dihemat Per Hari", value: "15+" },
     ],
