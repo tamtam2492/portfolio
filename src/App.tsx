@@ -212,7 +212,7 @@ const translations = {
       title2: "in mind? Let's talk.",
       desc: "Whether it's automation, a full-stack app, or untangling messy operations — reach out and let's figure out what makes sense for your case.",
       also_on: "Also Available On",
-      based: "Based in Makassar, Indonesia • Serving Global Enterprise Clients",
+      based: "Based in Makassar, Indonesia • Open to Remote Worldwide",
     },
     footer: {
       tagline: "Operations Systems Architect • Built with React & Tailwind",
@@ -303,7 +303,7 @@ const translations = {
       title2: "dalam pikiran? Mari ngobrol.",
       desc: "Baik itu otomasi, full-stack app, atau mengurai operasional yang rumit — hubungi saya dan mari kita cari tahu apa yang masuk akal untuk kasus Anda.",
       also_on: "Juga Tersedia Di",
-      based: "Berbasis di Makassar, Indonesia • Melayani Klien Global",
+      based: "Berbasis di Makassar, Indonesia • Terbuka untuk Remote Worldwide",
     },
     footer: {
       tagline: "Arsitek Sistem Operasional • Dibangun dengan React & Tailwind",
