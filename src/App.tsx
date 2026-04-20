@@ -90,7 +90,13 @@ const clients = [
         roi: { en: "Replaced pen-and-book operations entirely. Zero lost transaction records — every sale logged instantly, stock auto-deducted per transaction, no more stock miscounts. Pre-orders no longer missed via WhatsApp: structured pickup scheduling built in. Thermal receipts in seconds. Sales data available anytime via Chart.js dashboard or Excel export. Deployed live on Vercel.", id: "Menggantikan operasi buku-dan-pena sepenuhnya. Nol transaksi terlewat — setiap penjualan tercatat seketika, stok berkurang otomatis per transaksi, tidak ada lagi salah hitung stok. Pre-order tidak lagi terlewat via WhatsApp: penjadwalan pickup terstruktur langsung di app. Struk termal dalam hitungan detik. Data penjualan tersedia kapan saja via dashboard Chart.js atau export Excel. Di-deploy di Vercel." },
         tools: ["Node.js", "Express.js", "MongoDB Atlas", "React 19", "Chart.js", "ExcelJS", "PWA", "Vercel", "Bluetooth Printer"],
         icon: <Database className="w-5 h-5 text-pink-400" />,
-        image: "/niebuket-proof.jpg"
+        image: "/niebuket-proof.jpg",
+        review: {
+          en: "Honestly, I was skeptical at first — new systems usually just add more confusion. But this one actually simplified things. When an order comes in, it goes straight into the app — stock adjusts automatically, pickup schedules are logged. When customers want a receipt on WhatsApp, I just copy it from the app as an image and send it directly. No more tallying in a spreadsheet that still comes out wrong at the end of the day. I didn't think a bouquet shop could run this cleanly.",
+          id: "Jujur, awalnya saya skeptis. Biasanya kalau ada sistem baru malah bikin bingung. Tapi ternyata tidak. Sekarang kalau ada yang order, langsung masuk di app — stok berkurang otomatis, jadwal pengambilan langsung tercatat. Mau kirim nota ke pelanggan lewat WhatsApp? Tinggal copy struk dari app, paste jadi gambar, kirim. Tidak ada lagi hitung-hitungan manual di spreadsheet yang ujungnya tetap salah. Saya sampai tidak nyangka sendiri, bisnis buket bisa serapi ini.",
+          author: "Nia Kurniati",
+          role: { en: "Owner, Nie Buket", id: "Pemilik, Nie Buket" }
+        }
       },
     ]
   },
@@ -110,7 +116,13 @@ const clients = [
         roi: { en: "Replaced manual order intake (phone/WhatsApp → handwritten book) and courier coordination via group chat. Zero missed pickups — orders created and assigned in-app. All 3 roles have real-time visibility: customers track status, couriers get assignments with GPS, admin sees full operations. Automated daily/weekly/monthly XLSX reports replace end-of-month manual tallying. Production APK v1.4.11 actively used.", id: "Menggantikan penerimaan order manual (telepon/WhatsApp → buku tulis) dan koordinasi kurir via chat grup. Nol pickup terlewat — order dibuat dan di-assign di dalam app. Semua 3 role punya visibilitas real-time: pelanggan lacak status, kurir terima assignment + GPS, admin lihat operasional penuh. Laporan harian/mingguan/bulanan otomatis via XLSX menggantikan rekap manual akhir bulan. APK production v1.4.11 aktif digunakan." },
         tools: ["Kotlin", "Jetpack Compose", "Firebase Realtime DB", "FCM", "Express.js", "MongoDB Atlas", "JWT", "Google Maps", "ExcelJS", "Vercel"],
         icon: <Smartphone className="w-5 h-5 text-orange-400" />,
-        image: "/quality-laundry-proof.png"
+        image: "/quality-laundry-proof.png",
+        review: {
+          en: "We didn't have a pickup service at all before this — every customer came in person and left with a handwritten note. Not because we didn't want to grow, but we didn't know where to start. After the app, pickup just worked: couriers get assignments on their phones, GPS tells them where to go, customers can track their laundry themselves. Daily reports generate automatically — I just open the app and everything's already there. It felt like suddenly having an extra admin on staff.",
+          id: "Waktu itu kami belum ada layanan jemput-antar sama sekali. Semua pelanggan datang sendiri, dapat nota tulis tangan. Bukan karena tidak mau berkembang — tapi tidak tahu harus mulai dari mana. Setelah ada app ini, layanan jemput langsung bisa jalan: kurir terima order di HP, GPS tunjukkan arah, pelanggan bisa pantau laundry-nya sendiri. Laporan hariannya keluar otomatis — saya tinggal buka, semua sudah ada. Rasanya seperti tiba-tiba punya staf admin.",
+          author: "Haedir Suban",
+          role: { en: "Owner, Quality Laundry", id: "Pemilik, Quality Laundry" }
+        }
       },
     ]
   }
@@ -175,6 +187,7 @@ const translations = {
       engine: "The Engine",
       roi: "ROI & Impact",
       proof: "Proof of Work",
+      review: "Client Review",
     },
     whyme: {
       badge: "The Architect Advantage",
@@ -264,6 +277,7 @@ const translations = {
       engine: "Solusi",
       roi: "ROI & Dampak",
       proof: "Bukti Kerja",
+      review: "Review Klien",
     },
     whyme: {
       badge: "Keunggulan Arsitek",
@@ -622,6 +636,18 @@ export default function App() {
                               <img src={project.image} alt={`${project.title} proof`} className="w-full border border-brand-border hover:opacity-90 transition-opacity" />
                             </a>
                           ) : null}
+                        </div>
+                      )}
+
+                      {'review' in project && project.review && (
+                        <div className="mt-8 pt-6 border-t border-brand-border">
+                          <p className="label-caps mb-4">{t.portfolio.review}</p>
+                          <blockquote className="border-l-[3px] border-brand-accent pl-5 py-1">
+                            <p className="text-sm font-serif italic text-brand-muted leading-relaxed mb-3">"{project.review[lang]}"</p>
+                            <footer className="text-xs text-brand-accent font-medium tracking-wide">
+                              — {project.review.author}, {project.review.role[lang]}
+                            </footer>
+                          </blockquote>
                         </div>
                       )}
                     </motion.div>
