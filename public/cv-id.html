@@ -156,7 +156,7 @@ Saya tidak sekadar menulis kode &mdash; saya mengorkestrasi sistem cerdas. Denga
 saya menghasilkan solusi production-grade (Android, PWA, Automasi) dengan kecepatan dan skala satu tim penuh.
 </p>
 <p style="font-size:9.5pt;color:#222;margin-bottom:6px;">
-Sudah terbukti di lapangan: sistem penerimaan bukti pembayaran via Telegram+n8n+Groq (Llama 4 Scout) yang menghilangkan 100% input manual.
+Sudah terbukti di lapangan: sistem penerimaan bukti pembayaran via Telegram+n8n+AI/OCR yang menghilangkan 100% input manual.
   Mesin rekonsiliasi ekspedisi untuk 80+ cabang yang memangkas waktu rekonsiliasi harian dari seharian penuh menjadi kurang dari 20 menit.
 Aplikasi POS &amp; inventory PWA untuk toko bouquet. Aplikasi Android operasional laundry (v1.4.11) dengan 3 role dan GPS tracking.
 </p>
@@ -215,7 +215,7 @@ Saya tidak hanya membangun sistem - saya memahami apa yang rusak di lapangan dan
   </div>
   <ul>
     <li>Full-stack web app dengan arsitektur hybrid Vercel + AWS Lambda (Node.js + Supabase) untuk 80+ cabang di 2 area operasional, volume Rp90 juta+/bulan</li>
-    <li>Operator cabang mengunggah foto bukti transfer → Groq (Llama 4 Scout) secara otomatis membaca nama bank, nominal, dan tanggal dengan deteksi data duplikat</li>
+    <li>Operator cabang mengunggah foto bukti transfer &#x2192; AI/OCR secara otomatis membaca nama bank, nominal, dan tanggal dengan deteksi data duplikat</li>
     <li>OCR dan sinkronisasi NONCOD memakai pipeline background asinkron agar request pengguna selesai cepat sementara proses berat berjalan terpisah</li>
     <li>Dashboard admin: visibilitas real-time per cabang, per bank, per periode — ekspor XLSX dari 6 bank (BRI, BCA, ShopeePay, GoPay, BNI, DANA)</li>
     <li>Monitoring NONCOD/DFOD tersinkronisasi dari MauKirim; AWS Lambda menangani notifikasi Telegram dan pipeline sinkronisasi background</li>
@@ -230,8 +230,8 @@ Saya tidak hanya membangun sistem - saya memahami apa yang rusak di lapangan dan
     <span class="job-meta">2022 – 2023 &nbsp;|&nbsp; Sulawesi</span>
   </div>
   <ul>
-    <li>Workflow n8n end-to-end: foto bukti via Telegram → Groq (Llama 4 Scout) → validasi per-field → sync Google Sheets + konfirmasi otomatis</li>
-    <li>Input manual turun ke nol; akurasi 95% (Groq Llama 4 Scout); waktu proses &lt;10 detik per transaksi</li>
+    <li>Workflow n8n end-to-end: foto bukti via Telegram &#x2192; AI/OCR &#x2192; validasi per-field &#x2192; sync Google Sheets + konfirmasi otomatis</li>
+    <li>Input manual turun ke nol; akurasi 95%; waktu proses &lt;10 detik per transaksi</li>
     <li>Menangani 500+ transaksi harian; nol kesalahan transkripsi di seluruh tim collection</li>
   </ul>
 </div>
