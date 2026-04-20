@@ -330,7 +330,7 @@ export default function App() {
   const toolGroups = [
     { category: "Automation", tools: ["n8n", "Telegram Bot API", "WhatsApp Automation", "REST API / Webhooks"] },
     { category: "Data & Analytics", tools: ["Google Sheets", "Advanced Excel", "Power BI", "SUMIFS / XLOOKUP"] },
-    { category: "Intelligence", tools: ["AI / OCR", "Groq AI", "Google Forms"] },
+    { category: "Intelligence", tools: ["AI / OCR", "Groq AI"] },
     { category: "Mobile", tools: ["Kotlin", "Jetpack Compose", "FCM", "Google Maps API"] },
     { category: "Backend", tools: ["Node.js", "Express.js", "Firebase", "Supabase", "MongoDB Atlas", "JWT", "bcrypt"] },
     { category: "Infra & Tooling", tools: ["Vercel", "AWS Lambda", "React", "PWA", "ExcelJS"] },
