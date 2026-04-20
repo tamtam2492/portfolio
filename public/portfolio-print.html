@@ -248,15 +248,15 @@
       </div>
       <div class="project-row">
         <div class="label">What I Built</div>
-        <p>Built an end-to-end automation workflow using n8n. When a customer sends a payment receipt photo via Telegram, the system extracts all relevant data using AI/OCR, validates it, saves it automatically to Google Sheets, and sends a confirmation back to the sender. If the photo is unclear, the system requests a resend automatically.</p>
+        <p>Built an end-to-end n8n workflow. When an agent sends a payment receipt photo via Telegram, Llama 4 Scout (Groq) extracts Channel, Amount, Admin Fee, and Date — validating each field individually. Valid data is appended to Google Sheets with a structured confirmation sent back. If any field fails, the agent is told exactly which one to retake.</p>
       </div>
       <div class="project-row">
         <div class="label">Tools Used</div>
-        <div class="tools-row"><span>n8n</span><span>Telegram Bot API</span><span>AI / OCR</span><span>Google Sheets</span><span>REST API</span></div>
+        <div class="tools-row"><span>n8n</span><span>Telegram Bot API</span><span>Groq (Llama 4 Scout)</span><span>Google Sheets</span><span>REST API</span></div>
       </div>
       <div class="project-row" style="margin-bottom:0">
         <div class="label">Result</div>
-        <p>Manual data entry dropped to zero. <strong>95% AI/OCR accuracy achieved.</strong> <strong>80% reduction in manual processing time</strong> — from hours to under 10 seconds per receipt. Handles 500+ transactions daily. Zero transcription errors across the entire collection team.</p>
+        <p>Manual data entry dropped to zero. <strong>95% accuracy via Groq (Llama 4 Scout).</strong> Processing time cut from hours to <strong>under 10 seconds per receipt</strong>. Handles 500+ transactions. Per-field error feedback means agents know exactly which photo to retake.</p>
       </div>
       <div class="project-row" style="margin-top:12px; margin-bottom:0">
         <div class="label">Proof of Work</div>
