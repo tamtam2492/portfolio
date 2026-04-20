@@ -130,7 +130,6 @@ const translations = {
       p2_post: " (Makassar, Manado, Palu, Kendari, Gorontalo), including recruitment, performance evaluation, and resolving field issues. I know what breaks on the ground, and I build automation that survives it.",
       quote: '"As long as there is data that needs to be tracked, I can automate it. Because I have proven it in the field."',
       cta_hire: "Hire Me Now",
-      cta_fiverr: "View on Fiverr",
       available: "Open to the Right Projects",
       badge_img: "4 Clients • 5 Systems",
     },
@@ -220,7 +219,6 @@ const translations = {
       p2_post: " (Makassar, Manado, Palu, Kendari, Gorontalo), termasuk rekrutmen, evaluasi kinerja, dan penyelesaian masalah lapangan. Saya tahu apa yang rusak di lapangan, dan saya membangun otomasi yang tahan uji.",
       quote: '"Selama ada data yang perlu dilacak, saya bisa mengotomatisasinya. Karena saya sudah membuktikannya di lapangan."',
       cta_hire: "Hubungi Sekarang",
-      cta_fiverr: "Lihat di Fiverr",
       available: "Terbuka untuk Proyek yang Tepat",
       badge_img: "4 Klien • 5 Sistem",
     },
@@ -405,14 +403,6 @@ export default function App() {
                   className="bg-brand-accent text-white px-7 py-3.5 text-sm font-semibold flex items-center gap-2 hover:opacity-90 transition-opacity"
                 >
                   {t.hero.cta_hire} <ArrowRight className="w-4 h-4" />
-                </a>
-                <a
-                  href="https://www.fiverr.com/tamtam2492"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="border border-brand-border px-7 py-3.5 text-sm font-semibold text-brand-text flex items-center gap-2 hover:border-brand-accent hover:text-brand-accent transition-all"
-                >
-                  {t.hero.cta_fiverr}
                 </a>
                 <p className="text-sm text-brand-muted">{t.hero.available}</p>
               </div>
@@ -714,7 +704,6 @@ export default function App() {
               { label: "Telegram", value: "@tamtam2492", href: "https://t.me/tamtam2492" },
               { label: "LinkedIn", value: "linkedin.com/in/muhammadtharmizy", href: "https://www.linkedin.com/in/muhammadtharmizy" },
               { label: "GitHub", value: "github.com/tamtam2492", href: "https://github.com/tamtam2492" },
-              { label: "Fiverr", value: "fiverr.com/tamtam2492", href: "https://www.fiverr.com/tamtam2492" },
             ].map((item) => (
               <a
                 key={item.label}
