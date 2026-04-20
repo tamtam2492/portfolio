@@ -138,12 +138,13 @@ const translations = {
       p1_highlight: "orchestrate intelligent systems",
       p1_post: ". By leveraging AI workflows, I deliver production-grade solutions (Android, PWA, Automations) with the speed and scale of an entire team.",
       p2_pre: "Proven field operations leadership — led, monitored, and coordinated ",
-      p2_highlight: "50+ agents across 5 cities in Sulawesi",
-      p2_post: " (Makassar, Manado, Palu, Kendari, Gorontalo), including recruitment, performance evaluation, and resolving field issues. I know what breaks on the ground, and I build automation that survives it.",
+      p2_highlight: "50+ agents across 5 cities",
+      p2_post: ", including recruitment, performance evaluation, and resolving field issues. I know what breaks on the ground, and I build automation that survives it.",
       quote: '"As long as there is data that needs to be tracked, I can automate it. Because I have proven it in the field."',
       cta_hire: "Hire Me Now",
       available: "Open to the Right Projects",
-      badge_img: "4 Clients • 5 Systems",
+      badge_img: "5 Systems in Production",
+      pull_quote: { text: "It felt like suddenly having an extra admin on staff.", author: "Haedir Suban", role: "Owner, Quality Laundry" },
     },
     stats: [
       { label: "Manual Work Eliminated", value: "100%" },
@@ -227,13 +228,14 @@ const translations = {
       p1_pre: "Saya tidak sekadar menulis kode — saya ",
       p1_highlight: "mengorkestrasi sistem cerdas",
       p1_post: ". Dengan memanfaatkan workflow AI, saya menghasilkan solusi production-grade (Android, PWA, Otomasi) dengan kecepatan dan skala satu tim penuh.",
-      p2_pre: "Terbukti dalam kepemimpinan operasional lapangan — memimpin, memonitor, dan mengoordinasikan ",
-      p2_highlight: "50+ agen di 5 kota di Sulawesi",
-      p2_post: " (Makassar, Manado, Palu, Kendari, Gorontalo), termasuk rekrutmen, evaluasi kinerja, dan penyelesaian masalah lapangan. Saya tahu apa yang rusak di lapangan, dan saya membangun otomasi yang tahan uji.",
+      p2_pre: "Terbukti dalam kepemimpinan operasional lapangan — memimpin, memantau, dan mengoordinasikan ",
+      p2_highlight: "50+ agen di 5 kota",
+      p2_post: ", termasuk rekrutmen, evaluasi kinerja, dan penyelesaian masalah lapangan. Saya tahu apa yang rusak di lapangan, dan saya membangun otomasi yang tahan uji.",
       quote: '"Selama ada data yang perlu dilacak, saya bisa mengotomatisasinya. Karena saya sudah membuktikannya di lapangan."',
       cta_hire: "Hubungi Sekarang",
       available: "Terbuka untuk Proyek yang Tepat",
-      badge_img: "4 Klien • 5 Sistem",
+      badge_img: "5 Sistem di Produksi",
+      pull_quote: { text: "Rasanya seperti tiba-tiba punya staf admin.", author: "Haedir Suban", role: "Pemilik, Quality Laundry" },
     },
     stats: [
       { label: "Pekerjaan Manual Dieliminasi", value: "100%" },
@@ -450,6 +452,17 @@ export default function App() {
                 <div className="label-caps">{stat.label}</div>
               </div>
             ))}
+          </motion.div>
+
+          {/* Pull quote */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.6, duration: 0.6 }}
+            className="mt-12 border-l-[3px] border-brand-accent pl-5 py-1"
+          >
+            <p className="text-sm font-serif italic text-brand-muted leading-relaxed mb-2">"{t.hero.pull_quote.text}"</p>
+            <p className="text-xs text-brand-accent font-medium tracking-wide">— {t.hero.pull_quote.author}, {t.hero.pull_quote.role}</p>
           </motion.div>
         </div>
       </header>
