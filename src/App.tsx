@@ -303,7 +303,7 @@ const translations = {
       title2: "dalam pikiran? Mari ngobrol.",
       desc: "Baik itu otomasi, full-stack app, atau mengurai operasional yang rumit — hubungi saya dan mari kita cari tahu apa yang masuk akal untuk kasus Anda.",
       also_on: "Juga Tersedia Di",
-      based: "Berbasis di Makassar, Indonesia • Terbuka untuk Remote Worldwide",
+      based: "Berbasis di Makassar, Indonesia",
     },
     footer: {
       tagline: "Arsitek Sistem Operasional • Dibangun dengan React & Tailwind",
